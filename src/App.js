@@ -1,5 +1,10 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import MainPage from './pages/MainPage';
+import CategoriesPage from './pages/CategoriesPage';
+import AllProductsPage from './pages/AllProductsPage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
