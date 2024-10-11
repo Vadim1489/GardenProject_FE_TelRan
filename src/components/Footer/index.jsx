@@ -40,7 +40,7 @@ const Footer = () => {
       <div className={styles.mapContainer}>
         <iframe
           title="Google Map"
-          src="https://www.google.de/maps/search/Linkstra%C3%9Fe+2%2FOG,+10+Telran.de/@52.5079268,13.3725205,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4090427798205!2d13.372469776378468!3d52.50793613712307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8515353a68755%3A0xd0866511db4f838f!2sStarta%20Institute%20by%20Tel-Ran!5e0!3m2!1sde!2sde!4v1728673909754!5m2!1sde!2sde"
           width="100%"
           height="300"
           style={{ border: 0 }}
