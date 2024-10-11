@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './index.module.css';
+import logo_inst from './media/instagram.png';
+import logo_whats from './media/watsapp.png';
+
 
 const Footer = () => {
   return (
@@ -23,10 +26,10 @@ const Footer = () => {
             <h3>Socials</h3>
             <div className={styles.icons}>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="/path/to/instagram-icon.png" alt="Instagram" />
+                <img src={logo_inst} alt="Instagram" />
               </a>
-              <a href="https://viber.com" target="_blank" rel="noopener noreferrer">
-                <img src="/path/to/viber-icon.png" alt="Viber" />
+              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                <img src={logo_whats} alt="WhatsApp" />
               </a>
             </div>
           </div>
