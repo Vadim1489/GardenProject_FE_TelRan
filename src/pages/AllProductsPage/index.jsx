@@ -9,7 +9,7 @@ export default function AllProductsPage() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(getAllProducts), [])
+  useEffect(() => dispatch(getAllProducts), [dispatch])
 
   return (
     <div>
