@@ -1,6 +1,7 @@
 .nav_menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     padding: 20px 0;
     font-size: 24px;
@@ -10,5 +11,9 @@
 .nav_menu > a {
     text-decoration: none;
     color: #424436;
-    ;
+}
+
+.nav_menu > .cart > img  {
+    width: 48px;
+    height: 48px;
 }

@@ -7,10 +7,10 @@ export default function NavMenu() {
   return (
     <div>
       <nav className={s.nav_menu}>
-        <Link to='/'>MainPage</Link>
+        <Link to='/'>Main Page</Link>
         <Link to='/categories'>Categories</Link>
         <Link to='/all_products'>All products</Link>
-        <Link to='/cart'><img src={Cart} alt="Cart" /></Link>
+        <Link to='/cart'className={s.cart}><img src={Cart} alt="Cart" /></Link>
         
       </nav>
         

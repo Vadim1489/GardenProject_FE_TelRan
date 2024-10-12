@@ -9,7 +9,7 @@ import logo from './media/logo.png';
 export default function Header() {
   return (
     <header className={s.header}>
-        <Link to='/'> <img src={logo} alt="Logo" /></Link>
+        <Link to='/' className={s.logo}> <img src={logo} alt="Logo" /></Link>
         <NavMenu />
     </header>
   )
