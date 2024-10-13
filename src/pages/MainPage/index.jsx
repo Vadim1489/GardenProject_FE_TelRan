@@ -1,13 +1,13 @@
 import Footer from "../../components/Footer";
-import SalesBlockMailPage from "../../components/SalesBlockMainPage"; // Выбор первого варианта
-import Form from "../../components/Form"; // Выбор второго варианта
+import Form from "../../components/Form"; 
+import SalesBlock_MainPage from "../../components/SalesBlock_MainPage";
 
 export default function MainPage() {
   return (
     <div>
       
       <Form />
-      <SalesBlockMailPage /> 
+      <SalesBlock_MainPage />
       <Footer/>
     </div>
   )

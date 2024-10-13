@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { getAllProducts } from "../../requests/products_req";
 import AllProductsContainer from "../../components/AllProductsContainer";
 
-export default function SalesBlock_MailPage() {
+export default function SalesBlock_MainPage() {
 
   const allProductsState = useSelector(store => store.allProducts);
 
