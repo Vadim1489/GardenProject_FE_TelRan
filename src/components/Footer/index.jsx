@@ -13,7 +13,7 @@ const Footer = () => {
         <div className={styles.leftBlock}>
           <div className={styles.phone}>
             <h3>Phone</h3>
-            <p>+49 999 999 99 99</p>
+            <a href="tel:+499999999999">+49 999 999 99 99</a> 
           </div>
           <div className={styles.address}>
             <h3>Address</h3>
