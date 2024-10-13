@@ -20,7 +20,7 @@
 }
 
 .block {
-  background-color: rgba(245, 247, 245, 0.788); 
+  background-color: #F2F6D3; 
   padding: 20px;
   border: 1px solid #ddd; 
   border-radius: 10px; 
@@ -44,8 +44,8 @@
 }
 
 .icons img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .mapContainer iframe {
