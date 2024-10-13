@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import AllCategoriesContainer from "../../components/AllCategoriesContainer";
 import { useEffect } from "react";
 import { getAllCategories } from "../../requests/categories_req";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function CategoriesPage() {
 
@@ -13,8 +15,9 @@ export default function CategoriesPage() {
 
   return (
     <div>
-      
+        <Header />
         <AllCategoriesContainer categories = {allCategoriesState} />
+        <Footer />
     </div>
   )
 }
