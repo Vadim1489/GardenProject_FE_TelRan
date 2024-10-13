@@ -1,0 +1,43 @@
+@import '../../store/styles/variables.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title_block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    color: var(--black);
+}
+
+.line {
+    margin-left: 32px;
+    flex-grow: 1;
+    /* Позволяет линии занимать оставшееся пространство */
+    height: 1px;
+    background-color: var(--grey-divider);
+}
+
+.Btn {
+    border: 1px solid var(--grey-divider);
+    border-radius: 6px;
+    padding: 8px 16px;
+    width: 142px;
+    height: 36px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 126%; */
+    text-align: center;
+    color: var(--grey);
+}
