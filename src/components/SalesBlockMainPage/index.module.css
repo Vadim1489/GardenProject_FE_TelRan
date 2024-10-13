@@ -1,0 +1,17 @@
+@import '../../store/styles/variables.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sales_block{
+    width: 1360px;
+    align-items: center;
+    margin: 80px 40px;
+}
+.cards_block{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
