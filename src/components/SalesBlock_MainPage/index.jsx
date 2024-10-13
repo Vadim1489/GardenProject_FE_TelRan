@@ -15,11 +15,11 @@ export default function SalesBlock_MainPage({ products }) {
   const discountedProducts = products?.filter((product) => product.discont_price);
   const shuffledProducts = discountedProducts?.sort(() => Math.random() - 0.5);
 
-  // return (
-  //   <div className="container">
-  //     {shuffledProducts.slice(0, 4).map((products) => (
-  //       <AllProductCard products={allProductsState} />
-  //     ))}
-  //   </div>
-  // );
+  return (
+    <div className="container">
+      {shuffledProducts.slice(0, 4).map((products) => (
+        <AllProductCard products={allProductsState} />
+      ))}
+    </div>
+  );
 }

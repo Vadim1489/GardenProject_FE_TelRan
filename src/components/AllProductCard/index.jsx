@@ -3,6 +3,7 @@ import { domen } from "../../domen"
 import styles from "./index.module.css"
 
 export default function AllProductCard({ title, price, image, discont_price }) {
+  
   const percentDiscount = Math.round((price - discont_price) / price * 100)
 
 
@@ -41,9 +42,11 @@ export default function AllProductCard({ title, price, image, discont_price }) {
   null
 )}
 
-{percentDiscount === 100 ? <p className={styles.discont_price}>
-    {price}$
-  </p>: null}
+{
+  percentDiscount === 100 
+  ?<p className={styles.discont_price}>{price}$</p>
+  : null
+}
 
             
         </div>
