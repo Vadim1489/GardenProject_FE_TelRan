@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { getAllProducts } from "../../requests/products_req";
-import AllProductsContainer from "../../components/AllProductsContainer";
+import styles from './index.module.css'
+import ProductCard from "../ProductCard";
+import TitleBlockWithLine from "../TitleBlockWithLine/index";
 
 export default function SalesBlock_MainPage() {
 
@@ -21,8 +23,19 @@ export default function SalesBlock_MainPage() {
 
 
   return (
-    <div>
-        <AllProductsContainer products={productsToDisplay} />
+    <div  className={styles.sales_block}>
+
+      <TitleBlockWithLine  text='Sale' textBtn='All sales' link={'/all_sales'}/>
+
+
+
+          < div className={styles.cards_block}>
+       {
+            productsToDisplay.map(el => <ProductCard  key={el.id} {...el} />)
+        }
+       
     </div>
+    </div>
+
   )
 }
