@@ -1,17 +1,12 @@
 import Footer from "../../components/Footer";
-import Form from "../../components/Form";
-import SalesBlock_MainPage from "../../components/SalesBlock_MainPage";
-import Wrapper from "../../components/Wrapper";
-
+import SalesBlock_MailPage from "../../components/SalesBlock_MainPage";
 
 
 export default function MainPage() {
   return (
     <div>
-      <Wrapper />
-      <SalesBlock_MainPage />
-      <Form />
+      <SalesBlock_MailPage />
       <Footer/>
-    </div>
+     </div>
   )
 }
