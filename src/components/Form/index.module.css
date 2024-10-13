@@ -21,7 +21,7 @@ input::placeholder {
     color: white;
   }
 
-.form button {
+.form .btn {
     border-radius: 6px;
     border: 1px solid white;
     padding: 16px 32px;

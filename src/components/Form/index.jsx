@@ -11,10 +11,13 @@ export default function Form() {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+
+    reset();
   };
 
   return (
@@ -24,14 +27,14 @@ export default function Form() {
             <img src={form_image} alt="form_img" />
             <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
                 <input {...register('Name', {required: true})} placeholder='Name' />
-                {errors.name && <span>Это поле обязательно</span>}
+                {errors.name && <span>This field is required</span>}
 
                 <input {...register("phone", { required: true, pattern: /\d+/ })}  placeholder='Phone' />
-                {errors.phone && <span>Введите корректный номер телефона</span>}
+                {errors.phone && <span>Please enter a valid phone number</span>}
 
                 <input {...register("email", { required: true, pattern: /\S+@\S+\.\S+/ })} placeholder='Email'/>
-                {errors.email && <span>Введите корректный email</span>}
-                <input type="submit" />
+                {errors.email && <span>Please enter a valid email</span>}
+                <input type="submit" value="Get a discount" className={s.btn}/>
             </form>
         </div>
     </div>
