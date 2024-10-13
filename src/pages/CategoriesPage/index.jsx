@@ -13,6 +13,7 @@ export default function CategoriesPage() {
 
   return (
     <div>
+      
         <AllCategoriesContainer categories = {allCategoriesState} />
     </div>
   )
