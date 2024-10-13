@@ -3,7 +3,6 @@ import styles from './index.module.css';
 import logo_inst from './media/instagram.png';
 import logo_whats from './media/watsapp.png';
 
-
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -11,18 +10,20 @@ const Footer = () => {
 
       <div className={styles.infoContainer}>
         <div className={styles.leftBlock}>
-          <div className={styles.phone}>
+          <div className={styles.block}>
             <h3>Phone</h3>
-            <a href="tel:+499999999999">+49 999 999 99 99</a> 
+            <a href="tel:+499999999999" className={styles.phoneLink}>
+              +49 999 999 99 99
+            </a> 
           </div>
-          <div className={styles.address}>
+          <div className={styles.block}>
             <h3>Address</h3>
             <p>Linkstraße 2, 8 OG, 10785, Berlin, Deutschland</p>
           </div>
         </div>
 
         <div className={styles.rightBlock}>
-          <div className={styles.socials}>
+          <div className={styles.block}>
             <h3>Socials</h3>
             <div className={styles.icons}>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -33,7 +34,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className={styles.workingHours}>
+          <div className={styles.block}>
             <h3>Working Hours</h3>
             <p>24 hours a day</p>
           </div>
