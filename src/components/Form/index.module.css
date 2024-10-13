@@ -12,14 +12,25 @@
     padding: 16px 32px;
     width: 516px;
     height: 58px;
+    background: linear-gradient(37deg, #87933d 0%, #55610b 100%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
 }
+
+input::placeholder {
+    color: white;
+  }
 
 .form button {
     border-radius: 6px;
+    border: 1px solid white;
     padding: 16px 32px;
     width: 516px;
     height: 58px;
     background: #fffff1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .discount_form {
@@ -36,6 +47,8 @@
     font-weight: 700;
     color: #fff;
     margin: 0 0 32px 0;
+    font-family: "Montserrat", sans-serif;
+    
 }
 
 .discount_form_container {
