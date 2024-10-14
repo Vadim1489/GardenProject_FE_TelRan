@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.wrapper h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.wrapper .btn {
+    border-radius: 6px;
+    padding: 16px 56px;
+    width: 218px;
+    height: 58px;
+    background: #92a134;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

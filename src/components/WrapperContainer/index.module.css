@@ -1,0 +1,5 @@
+.wrapper_container { 
+    background-image: url('./media/wrapper_background.png');
+    width: 1440px;
+    height: 600px;
+}

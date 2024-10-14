@@ -31,7 +31,7 @@
     width: 67px;
     height: 34px;
     background-color: var(--green);
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
@@ -46,7 +46,7 @@
     padding: 0 32px;
 }
 .product_title{
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
 font-weight: 500;
 font-size: 20px;
 line-height: 130%;
@@ -66,14 +66,14 @@ gap: 16px;
     
 }
 .discont_price{
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-weight: 600;
     font-size: 40px;
     line-height: 110%;
     color: var(--black);
 }
 .price{
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
