@@ -40,6 +40,7 @@ input::placeholder {
     padding: 32px 32px 0px 32px;
     width: 1360px;
     height: 486px;
+    margin:  auto;
 }
 
 .discount_form p {
