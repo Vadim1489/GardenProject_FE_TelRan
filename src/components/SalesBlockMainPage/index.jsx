@@ -5,7 +5,7 @@ import styles from './index.module.css'
 import ProductCard from "../ProductCard";
 import TitleBlockWithLine from "../TitleBlockWithLine/index";
 
-export default function SalesBlock_MainPage() {
+export default function SalesBlockMainPage() {
 
   const allProductsState = useSelector(store => store.allProducts);
 
