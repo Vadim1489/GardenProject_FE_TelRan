@@ -1,11 +1,11 @@
 import React from 'react'
-import AllProductCard from '../AllProductCard'
+import ProductCard from '../ProductCard'
 
 export default function AllProductsContainer({products}) {
   return (
     <div>
         {
-            products.map(el => <AllProductCard key={el.id} {...el} />)
+            products.map(el => <ProductCard key={el.id} {...el} />)
         }
     </div>
   )
