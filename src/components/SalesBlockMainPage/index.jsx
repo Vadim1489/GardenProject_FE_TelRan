@@ -6,7 +6,8 @@ import ProductCard from "../ProductCard";
 import TitleBlockWithLine from "../TitleBlockWithLine/index";
 
 export default function SalesBlockMainPage() {
-  const allProductsState = useSelector((store) => store.allProducts);
+
+  const allProductsState = useSelector(store => store.allProducts);
 
   const dispatch = useDispatch();
 

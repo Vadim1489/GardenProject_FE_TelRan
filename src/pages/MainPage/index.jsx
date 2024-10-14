@@ -1,9 +1,9 @@
 import Footer from "../../components/Footer";
-import SalesBlockMainPage from '../../components/SalesBlockMainPage';
+import SalesBlockMainPage from "../../components/SalesBlockMainPage"; 
 import Form from "../../components/Form"; 
-import WrapperContainer from "../../components/WrapperContainer";
-import Header from "../../components/Header";
 import s from './index.module.css'
+import Header from "../../components/Header";
+import WrapperContainer from "../../components/WrapperContainer";
 
 export default function MainPage() {
   return (
