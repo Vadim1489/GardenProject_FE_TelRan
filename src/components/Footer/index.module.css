@@ -8,8 +8,9 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 64px;
   margin-bottom: 20px;
+  color: #424436;
 }
 
 .infoContainer {
