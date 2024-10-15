@@ -5,6 +5,7 @@ import s from './index.module.css'
 import AllProductsContainer from "../../components/AllProductsContainer";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import FilterForm from "../../components/FilterForm";
 
 export default function AllProductsPage() {
 
@@ -18,6 +19,7 @@ export default function AllProductsPage() {
     <div className={s.all_products}>
         <Header /> 
         <h3>All Products</h3>
+        <FilterForm />
         <AllProductsContainer products={allProductsState} />
         <Footer />
     </div>
