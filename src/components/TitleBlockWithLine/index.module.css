@@ -40,4 +40,5 @@
     /* line-height: 126%; */
     text-align: center;
     color: var(--grey);
+    cursor: pointer;
 }
