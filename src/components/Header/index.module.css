@@ -6,6 +6,8 @@
     padding: 25px ;
     background-color: #FFFFF1;
     /* font-family: "Montserrat", sans-serif; */
+    max-width: 1440px;
+    margin: auto;
 }
 
 

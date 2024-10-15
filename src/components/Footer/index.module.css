@@ -3,7 +3,8 @@
   /* background-color: #f4f4f4;*/
   background-color:#FFFFF1;
   /* border-top: 1px solid #ddd; */
-  width: 1440px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .title {

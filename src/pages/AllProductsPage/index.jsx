@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from "react-redux"
 import { getAllProducts } from "../../requests/products_req";
 import s from './index.module.css'
 import AllProductsContainer from "../../components/AllProductsContainer";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import FilterForm from "../../components/FilterForm";
 
 export default function AllProductsPage() {
