@@ -10,12 +10,10 @@ import CategoriesBlock from "../../components/CategoriesBlock";
 export default function MainPage() {
   return (
     <div className={s.main}>
-      <Header />
       <WrapperContainer />
       <CategoriesBlock/>
       <Form />
       <SalesBlockMainPage />
-      <Footer/>
     </div>
   )
 }

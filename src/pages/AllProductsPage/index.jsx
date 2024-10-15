@@ -17,11 +17,9 @@ export default function AllProductsPage() {
 
   return (
     <div className={s.all_products}>
-        <Header /> 
         <h3>All Products</h3>
         <FilterForm />
         <AllProductsContainer products={allProductsState} />
-        <Footer />
     </div>
   )
 }

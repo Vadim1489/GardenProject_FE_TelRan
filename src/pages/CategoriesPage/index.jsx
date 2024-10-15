@@ -15,9 +15,7 @@ export default function CategoriesPage() {
 
   return (
     <div>
-        <Header />
         <AllCategoriesContainer categories = {allCategoriesState} />
-        <Footer />
     </div>
   )
 }
