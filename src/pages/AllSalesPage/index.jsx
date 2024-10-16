@@ -25,11 +25,7 @@ export default function AllSalesPage() {
       <h3>Discounted items</h3>
       <FilterForm none={"none"} />
       <div className={s.cards_block}>
-        {discountedProducts.map(el =>
-          <Link className={s.link} key={el.id} to={`${"/products/:id".replace(":id", el.id)}`}>
-            <ProductCard key={el.id} {...el} />
-          </Link>
-        )}
+        {discountedProducts.map(el => <ProductCard key={el.id} {...el} />)}
       </div>
     </div>
   )
