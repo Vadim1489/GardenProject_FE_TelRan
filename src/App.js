@@ -7,6 +7,7 @@ import CartPage from './pages/CartPage';
 import Header from './components/Header';
 import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
+import SingleProductPage from './pages/SingleProductPage';
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='categories' element={<CategoriesPage />} />
-        <Route path='all_products' element={<AllProductsPage />} />
-        <Route path='all_sales' element={<AllSalesPage />} />
-        <Route path='cart' element={<CartPage />} />
+        <Route path='/categories' element={<CategoriesPage />} />
+        <Route path='/all_products' element={<AllProductsPage />} />
+        <Route path='/all_sales' element={<AllSalesPage />} />
+        <Route path='/cart' element={<CartPage />} />
+        <Route path='/products/:product_id' element={<SingleProductPage />} />
       </Routes>
       <Footer />
     </div>

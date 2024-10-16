@@ -57,7 +57,7 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
 }
 
 .discount_form img {
