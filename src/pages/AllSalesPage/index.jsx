@@ -26,7 +26,7 @@ export default function AllSalesPage() {
       <FilterForm none={"none"} />
       <div className={s.cards_block}>
         {discountedProducts.map(el =>
-          <Link key={el.id} to={`${"/products/:id".replace(":id", el.id)}`}>
+          <Link className={s.link} key={el.id} to={`${"/products/:id".replace(":id", el.id)}`}>
             <ProductCard key={el.id} {...el} />
           </Link>
         )}
