@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getAllProducts } from "../../requests/products_req"
 import s from "./index.module.css"
 import ProductCard from "../../components/ProductCard"
 import FilterForm from "../../components/FilterForm"
-import { useFiltration } from "../../customHooks/useFiltralion"
-import { Link } from "react-router-dom"
+
 
 export default function AllSalesPage() {
   const allProductsState = useSelector(store => store.allProducts)
