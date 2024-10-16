@@ -1,7 +1,14 @@
 import React from "react"
 import s from "./index.module.css"
+import {
+    maxPriceChange,
+    minPriceChange,
+    sortedChange,
+     } from '../../store/reducers/filterSlice';
+import { useDispatch } from 'react-redux';
 
-export default function FilterForm({ none }) {
+export default function FilterForm({ none, setCheck }) {
+    const dispatch = useDispatch();
   return (
     <form className={s.form}>
       <div className={s.inputBlock}>
@@ -11,8 +18,11 @@ export default function FilterForm({ none }) {
           type="text"
           id="minprice"
           placeholder="from"
+          onChange={(event) => dispatch(minPriceChange(event.target.value))}
         />
-        <input className={s.input} type="text" id="" placeholder="to" />
+        <input className={s.input} type="text" id="" placeholder="to"
+         onChange={(event) => dispatch(maxPriceChange(event.target.value))}
+        />
       </div>
       <label
         htmlFor="check"
@@ -20,12 +30,15 @@ export default function FilterForm({ none }) {
         style={{ display: none ? "none" : "" }}
       >
         Discounted items
-        <input type="checkbox" id="check" className={s.checkbox} />
+        <input type="checkbox" id="check" className={s.checkbox} 
+        onChange={(e) => setCheck(e.target.checked)}
+        />
         <span className={s.fake} />
       </label>
       <div className={s.selectBlock}>
         <label htmlFor="sort">Sorted</label>
-        <select className={s.select} id="sort">
+        <select className={s.select} id="sort"
+         onChange={(event) => dispatch(sortedChange(event.target.value))}>
           <option>by default</option>
           <option value="asc">Ascending by price</option>
           <option value="desc">Descending by price</option>
