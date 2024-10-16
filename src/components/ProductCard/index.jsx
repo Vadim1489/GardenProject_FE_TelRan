@@ -10,7 +10,7 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
 
   return (
     
-    <Link className={s.link} key={id} to={`${"/products/:id".replace(":id", id)}`}>
+
     <div className={s.product_card}>
 <<<<<<< HEAD
       <Link to={`/products/${id}`}>
@@ -61,6 +61,5 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
       </div>
       </Link>
     </div>
-    </Link>
   )
 }
