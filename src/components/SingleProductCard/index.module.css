@@ -140,6 +140,11 @@
     height: 58px;
     background: #92a134;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
 }
 
 .descr_block {
