@@ -23,7 +23,7 @@
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 8px 16px;
-    width: 142px;
+    width: fit-content;
     height: 36px;
     font-weight: 500;
     font-size: 16px;
