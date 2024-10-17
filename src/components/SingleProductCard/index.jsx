@@ -21,16 +21,24 @@ export default function SingleProductCard({title, price, discont_price, descript
               </div>
             </div>
             <div className={s.single_product_content}>
-              <div>
                 <h3>{title}</h3>
+              <div  className={s.price_container}>
                 {
                   percentDiscount !== 100
                   ? (<div className={s.price_block}>
                       <p className={s.discont_price}>${discont_price}</p>
                       <p className={s.price}>${price}</p>
                     </div>)
-                  : (null)
+                  : (<p className={s.price_without_discont}>${price}</p>)
                 }
+                <div className={s.discont_percent_block}>
+                  {
+                    discont_price !== null
+                    ? <p className={s.discont_percent}>-{Math.round(100 - (discont_price*100 / price))} %</p>
+                    : null
+                  }
+                </div>
+
               </div>
               <div className={s.add_cart_block}>
                   <div className={s.add_cart_count}>

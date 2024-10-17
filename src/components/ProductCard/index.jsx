@@ -10,12 +10,8 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
 
   return (
     
-
     <div className={s.product_card}>
-<<<<<<< HEAD
       <Link to={`/products/${id}`}>
-=======
->>>>>>> a582b4b44fac14300924329da7d0e238b6c0bdcb
       
       <div
         className={s.product_img}
@@ -61,5 +57,6 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
       </div>
       </Link>
     </div>
+
   )
 }
