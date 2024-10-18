@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div className={styles.block}>
             <h3>Address</h3>
-            <p>Linkstraße 2, 8 OG, 10785, Berlin, Deutschland</p>
+            <a href="https://maps.app.goo.gl/k7ZoUZgPuTXEMvH69" target="_blank">Linkstraße 2, 8 OG, 10785, Berlin, Deutschland</a>
           </div>
         </div>
 

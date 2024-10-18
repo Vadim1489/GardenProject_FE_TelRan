@@ -26,8 +26,9 @@ export default function Form() {
         <div className={s.discount_form_container}>
             <img src={form_image} alt="form_img" />
             <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
-                <input {...register('Name', {required: true})} placeholder='Name' />
-                {errors.name && <span>This field is required</span>}
+                
+                <input {...register('Name', {required: true})} placeholder='Name'/>
+                {errors.Name && <span>This field is required</span>}
 
                 <input {...register("phone", { required: true, pattern: /\d+/ })}  placeholder='Phone' />
                 {errors.phone && <span>Please enter a valid phone number</span>}
