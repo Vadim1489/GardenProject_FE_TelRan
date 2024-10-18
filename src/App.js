@@ -12,16 +12,13 @@ import SingleProductPage from './pages/SingleProductPage';
 function App() {
   return (
     <div> 
-      <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='/categories' element={<CategoriesPage />} />
-        <Route path='/all_products' element={<AllProductsPage />} />
-        <Route path='/all_sales' element={<AllSalesPage />} />
-        <Route path='/cart' element={<CartPage />} />
-        <Route path='/products/:product_id' element={<SingleProductPage />} />
+        <Route path='categories' element={<CategoriesPage />} />
+        <Route path='all_products' element={<AllProductsPage />} />
+        <Route path='cart' element={<CartPage />} />
+
       </Routes>
-      <Footer />
     </div>
   );
 }
