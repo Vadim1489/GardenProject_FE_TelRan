@@ -9,6 +9,7 @@ import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
 import SingleProductPage from './pages/SingleProductPage';
 import ProductsByCategoryPage from './pages/ProductsByCategoryPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='categories/:categoryId' element={<ProductsByCategoryPage />} />
         <Route path='single_product/:productId' element={<SingleProductPage />} /> 
         <Route path='all_sales' element={<AllSalesPage />} /> 
+        <Route path='*' element={<NotFoundPage />} /> 
       </Routes>
       <Footer /> 
     </div>
