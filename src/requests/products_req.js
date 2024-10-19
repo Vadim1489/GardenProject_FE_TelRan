@@ -2,6 +2,7 @@ import { domen } from "../domen"
 import { loadAllProductsAction } from "../store/reducers/allProductsReducer"
 import { loadSingleProductAction } from "../store/reducers/singleProductReducer"
 
+
 export const getAllProducts = (dispatch) => {
     fetch(`${domen}/products/all`)
         .then(res => res.json())

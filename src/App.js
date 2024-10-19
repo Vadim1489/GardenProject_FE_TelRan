@@ -8,17 +8,22 @@ import Header from './components/Header';
 import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
 import SingleProductPage from './pages/SingleProductPage';
+import ProductsByCategoryPage from './pages/ProductsByCategoryPage';
 
 function App() {
   return (
-    <div> 
+    <div>
+      <Header /> 
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='categories' element={<CategoriesPage />} />
         <Route path='all_products' element={<AllProductsPage />} />
         <Route path='cart' element={<CartPage />} />
-
+        <Route path='categories/:categoryId' element={<ProductsByCategoryPage />} />
+        <Route path='single_product/:productId' element={<SingleProductPage />} /> 
+        <Route path='all_sales' element={<AllSalesPage />} /> 
       </Routes>
+      <Footer /> 
     </div>
   );
 }
