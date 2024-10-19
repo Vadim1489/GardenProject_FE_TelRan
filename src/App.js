@@ -21,7 +21,7 @@ function App() {
         <Route path='all_products' element={<AllProductsPage />} />
         <Route path='cart' element={<CartPage />} />
         <Route path='categories/:categoryId' element={<ProductsByCategoryPage />} />
-        <Route path='single_product/:productId' element={<SingleProductPage />} /> 
+        <Route path='/products/:product_id' element={<SingleProductPage />} /> 
         <Route path='all_sales' element={<AllSalesPage />} /> 
         <Route path='*' element={<NotFoundPage />} /> 
       </Routes>

@@ -12,12 +12,14 @@ export default function CategoriesBlock() {
 
   const allCategoriesState = useSelector(store => store.allCategories);
 
+  const slicedCategories = [...allCategoriesState].slice(0  , 4);
+
   useEffect(()=> dispatch(getAllCategories),[dispatch])
 
   return (
     <div>
       <TitleBlockWithLine text="Categories" textBtn="All categories" link={"/categories"} />
-      <AllCategoriesContainer categories = {allCategoriesState}/>
+      <AllCategoriesContainer categories = {slicedCategories}/>
     </div>
   )
 }

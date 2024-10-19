@@ -1,5 +1,5 @@
 const defaultState = {
-    data: [],
+    data: [{}],
     status: 'loading'
 }
 
