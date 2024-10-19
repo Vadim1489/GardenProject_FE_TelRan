@@ -1,3 +1,17 @@
+.container {
+  padding: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #FFFFF1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #424436;
+  margin-bottom: 20px;
+}
+
 .productsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
