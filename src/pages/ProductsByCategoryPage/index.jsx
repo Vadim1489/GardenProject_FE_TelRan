@@ -9,7 +9,6 @@ import { changeProductByCategoryStatusAction } from '../../store/reducers/produc
 import AllProductsContainer from '../../components/AllProductsContainer';
 
 export default function ProductsByCategoryPage() {
-  
     const { category_id } = useParams(); 
 
     const dispatch = useDispatch();
@@ -17,11 +16,18 @@ export default function ProductsByCategoryPage() {
                // const [filteredProducts, setFilteredProducts] = useState([]);
 
     const productsByCategoryState = useSelector(store => store.productsByCategory);
- 
+
+    console.log(productsByCategoryState);
+
+    const { status } = productsByCategoryState
+    
     const products = productsByCategoryState.data;
     
 
-    useEffect(() => dispatch(getProductsByCategory(category_id)), [])
+    useEffect(() => {
+      dispatch(changeProductByCategoryStatusAction())
+      dispatch(getProductsByCategory(category_id))
+    }, [])
 
 
 
@@ -81,7 +87,9 @@ export default function ProductsByCategoryPage() {
   return (
     <div>
       {
-        products.data.map(el=><ProductCard key={el.id} {...el} />)
+        status === 'loading'
+        ? 'Products are loading...'
+        :products.data.map(el=><ProductCard key={el.id} {...el} />)
       }
     </div>
   );
