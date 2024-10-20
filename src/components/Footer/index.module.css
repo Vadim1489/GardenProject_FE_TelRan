@@ -2,13 +2,19 @@
   padding: 40px;
   /* background-color: #f4f4f4;*/
   background-color:#FFFFF1;
-  border-top: 1px solid #ddd;
-  width: 1440px;
+  /* border-top: 1px solid #ddd; */
+  max-width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 64px;
   margin-bottom: 20px;
+  color: #424436;
 }
 
 .infoContainer {

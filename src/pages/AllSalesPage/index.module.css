@@ -1,0 +1,20 @@
+.sales_block {
+    max-width: 1440px;
+    margin: auto;
+    background-color: #FFFFF1;
+    padding: 0 40px;
+}
+
+.sales_block h3 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #424436;
+}
+.cards_block{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 32px;
+    }
+    .link{
+        text-decoration: none;
+    }

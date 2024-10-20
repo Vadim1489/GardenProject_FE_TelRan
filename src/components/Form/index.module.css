@@ -15,6 +15,7 @@
     background: linear-gradient(37deg, #87933d 0%, #55610b 100%);
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    cursor: pointer;
 }
 
 input::placeholder {
@@ -37,7 +38,6 @@ input::placeholder {
 .discount_form {
     background: linear-gradient(37deg, #87933d 0%, #55610b 100%);
     border-radius: 12px;
-    padding: 32px 32px 0px 32px;
     width: 1360px;
     height: 486px;
     margin:  auto;
@@ -57,11 +57,28 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: end;
-}
+    align-items: center;
+} 
 
 .discount_form img {
     width: 748px;
     height: 340px;
     object-fit: cover;
+}
+
+.input_group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.error_message {
+    position: absolute;
+    right: 10px;
+    top: 22px;
+    color: white;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #e5e4d3;
 }

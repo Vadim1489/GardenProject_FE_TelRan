@@ -1,18 +1,17 @@
-import Footer from "../../components/Footer";
-import SalesBlockMainPage from '../../components/SalesBlockMainPage';
-import Form from "../../components/Form"; 
+import SalesBlock from "../../components/SalesBlock";
 import WrapperContainer from "../../components/WrapperContainer";
-import Header from "../../components/Header";
-import s from './index.module.css'
+import Form from "../../components/Form";
+import s from "./index.module.css";
+import CategoriesBlock from "../../components/CategoriesBlock";
+
 
 export default function MainPage() {
   return (
     <div className={s.main}>
-      <Header />
       <WrapperContainer />
+      <CategoriesBlock/>
       <Form />
-      <SalesBlockMainPage />
-      <Footer/>
+      <SalesBlock />
     </div>
   )
 }

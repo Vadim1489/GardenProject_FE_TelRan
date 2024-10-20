@@ -3,9 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px ;
+    padding: 30px 40px 28px 40px;
     background-color: #FFFFF1;
     /* font-family: "Montserrat", sans-serif; */
+    max-width: 1440px;
+    margin: auto;
+    gap: 32px;
 }
 
 

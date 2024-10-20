@@ -1,21 +1,20 @@
-@import '../../store/styles/variables.css';
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.link{
+    text-decoration: none;
+    width: 316px;
+    height: 422px;
 }
-
 .product_card {
-    border: 1px solid var(--grey-divider);
+    border: 1px solid #ddd;
     border-radius: 12px;
     width: 316px;
     height: 422px;
     position: relative;
+    background-color: #fff;
+
 }
 
 .product_img {
-    border-bottom: 1px solid var(--grey-divider);
+    border-bottom: 1px solid #ddd;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     width: 316px;
@@ -30,13 +29,12 @@
     padding: 4px 8px;
     width: 67px;
     height: 34px;
-    background-color: var(--green);
-    /* font-family: var(--font-family); */
+    background-color: #f26d22;
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0.03em;
-    color: var(--white);
+    color: #fff;
     position: absolute;
     top: 16px;
     right: 16px;
@@ -44,39 +42,40 @@
 .product_text{
     margin-top: 20px;
     padding: 0 32px;
+    width: 316px;
 }
 .product_title{
-    /* font-family: var(--font-family); */
-font-weight: 500;
-font-size: 20px;
-line-height: 130%;
-color: var(--black);
-white-space: nowrap;      /* Запрещает перенос текста на новую строку */
-overflow: hidden;         /* Скрывает текст, который не помещается в блок */
-text-overflow: ellipsis;  /* Добавляет троеточие в конце строки */
-width: 250px;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 130%; */
+    color: #424436;
+    white-space: nowrap;     /*  Запрещает перенос текста на новую строку */
+    overflow: hidden;        /*  Скрывает текст, который не помещается в блок */
+    text-overflow:ellipsis; /*  Добавляет троеточие в конце строки */
+    width: 250;
 }
 .product_price{
     margin-top: 16px;
     display: flex;
-    /* padding: 0px 32px 32px 32px; */
-width: 316px;
-height: 118px;
-gap: 16px;
+    width: 316px;
+    height: 118px;
+    gap: 16px;
     
 }
 .discont_price{
-    /* font-family: var(--font-family); */
     font-weight: 600;
     font-size: 40px;
     line-height: 110%;
-    color: var(--black);
+    color: #424436;
 }
 .price{
-    /* font-family: var(--font-family); */
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
     text-decoration: line-through;
-    color: var(--grey);
+    color: #8b8b8b;
+}
+
+a {
+    text-decoration: none;
 }

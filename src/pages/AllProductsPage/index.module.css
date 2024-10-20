@@ -1,4 +1,14 @@
-* {
-    padding: 0;
-    
+.all_products {
+    max-width: 1440px;
+    margin: auto;
+    background-color: #FFFFF1;
+    padding: 0 40px;
 }
+
+.all_products h3 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #424436;
+    margin: auto;
+}
+

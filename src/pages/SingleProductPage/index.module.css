@@ -1,0 +1,6 @@
+.single_product_page {
+    max-width: 1440px;
+    background-color: #FFFFF1;
+    display: flex;
+    margin: auto;
+}
