@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { domen } from '../../domen';
 import FilterForm from '../../components/FilterForm';
 import ProductCard from '../../components/ProductCard'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductsByCategory } from '../../requests/categories_req';
 import { changeProductByCategoryStatusAction } from '../../store/reducers/productsByCategoryReducer';
-import AllProductsContainer from '../../components/AllProductsContainer';
+
 
 export default function ProductsByCategoryPage() {
     const { category_id } = useParams(); 
@@ -22,6 +21,7 @@ export default function ProductsByCategoryPage() {
     const { status } = productsByCategoryState
     
     const products = productsByCategoryState.data;
+    
     
 
     useEffect(() => {
@@ -86,6 +86,7 @@ export default function ProductsByCategoryPage() {
 
   return (
     <div>
+      <h2></h2>
       {
         status === 'loading'
         ? 'Products are loading...'

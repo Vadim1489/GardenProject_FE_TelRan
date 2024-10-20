@@ -17,8 +17,6 @@ export default function AllCategoriesContainer({ categories }) {
         </div>
       )}
 
-    
-      <h3 className={s['categories-title']}>Categories</h3>
 
      
       <div className={s['categories-grid']}>
