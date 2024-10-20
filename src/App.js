@@ -17,12 +17,12 @@ function App() {
       <Header /> 
       <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='categories' element={<CategoriesPage />} />
-        <Route path='all_products' element={<AllProductsPage />} />
-        <Route path='cart' element={<CartPage />} />
-        <Route path='categories/:categoryId' element={<ProductsByCategoryPage />} />
+        <Route path='/categories' element={<CategoriesPage />} />
+        <Route path='/all_products' element={<AllProductsPage />} />
+        <Route path='/cart' element={<CartPage />} />
+        <Route path='/categories/:category_id' element={<ProductsByCategoryPage />} />
         <Route path='/products/:product_id' element={<SingleProductPage />} /> 
-        <Route path='all_sales' element={<AllSalesPage />} /> 
+        <Route path='/all_sales' element={<AllSalesPage />} /> 
         <Route path='*' element={<NotFoundPage />} /> 
       </Routes>
       <Footer /> 
