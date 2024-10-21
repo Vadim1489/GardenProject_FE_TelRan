@@ -1,5 +1,5 @@
 import NotFoundImg from './media/404.png'
-import NotFoundImg_4 from './media/4.png'
+import NotFoundImg_4 from './media/4.svg'
 import s from './index.module.css'
 import { Link } from 'react-router-dom'
 export default function NotFoundPage() {

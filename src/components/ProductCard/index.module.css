@@ -114,7 +114,7 @@ a {
     visibility: visible;
     background-color: #f26d22;
     border: none;
-    
+
 }
 
 .button:hover {
@@ -122,5 +122,5 @@ a {
     /* Кнопка становится видимой */
     visibility: visible;
     background-color: #424436 !important
-        /* При наведении на кнопку */
+    /* При наведении на кнопку */
 }
