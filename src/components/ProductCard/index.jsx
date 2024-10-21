@@ -51,11 +51,14 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
           ? <p className={s.discont_price}>{price}$</p>
           : null
         }
+        
 
             
         </div>
       </div>
       </Link>
+      <button className={s.button}>Add to cart</button>
+
     </div>
 
   )
