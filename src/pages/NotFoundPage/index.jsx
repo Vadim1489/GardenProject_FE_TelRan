@@ -7,9 +7,9 @@ export default function NotFoundPage() {
     <div className={s.not_found_page_container}>
       <div className={s.not_found_page}>
         <div className={s.block_404}>
-          <img src={NotFoundImg_4} alt="Not Found Image" className={s._4} />
-          <img src={NotFoundImg} alt="Not Found Image" />
-          <img src={NotFoundImg_4} alt="Not Found Image" className={s._4} />
+          <img src={NotFoundImg_4} alt="Not Found Pic" className={s._4} />
+          <img src={NotFoundImg} alt="Not Found Pic" />
+          <img src={NotFoundImg_4} alt="Not Found Pic" className={s._4} />
           
         </div>
         <div className={s.block_404_text}>

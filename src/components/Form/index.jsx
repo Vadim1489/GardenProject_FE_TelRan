@@ -27,7 +27,7 @@ export default function Form() {
         <img src={form_image} alt="form_img" />
 
         <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
-        
+        <div className={s.input}>
           <div className={`${s.input_group} ${errors.name ? s.has_error : ''}`}>
             <input
               {...register('name', { required: 'Name is required' })}
@@ -61,6 +61,7 @@ export default function Form() {
               placeholder='Email'
             />
             {errors.email && <span className={s.error_message}>! {errors.email.message}</span>}
+          </div>
           </div>
 
           <button type="submit" className={s.btn}>Get a discount</button>
