@@ -18,11 +18,11 @@ export default function AllCategoriesContainer({ categories }) {
       )}
 
     
-      <h3 className={s['categories-title']}>Categories</h3> 
+      <h3 className={s.categories_title}>Categories</h3> 
 
 
      
-      <div className={s['categories-grid']}>
+      <div className={s.categories_grid}>
         {categories.map((el) => (
           <CategoriesCard key={el.id} {...el} />
         ))}
