@@ -20,6 +20,7 @@ export default function AllCategoriesContainer({ categories }) {
     
       <h3 className={s['categories-title']}>Categories</h3> 
 
+
      
       <div className={s['categories-grid']}>
         {categories.map((el) => (

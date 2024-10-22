@@ -17,7 +17,7 @@ export default function CategoriesBlock() {
   useEffect(()=> dispatch(getAllCategories),[dispatch])
 
   return (
-    <div>
+    <div className={s.block}>
       <TitleBlockWithLine text="Categories" textBtn="All categories" link={"/categories"} />
       <AllCategoriesContainer categories = {slicedCategories}/>
     </div>
