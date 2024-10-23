@@ -2,8 +2,12 @@ import React from "react"
 import { domen } from "../../domen"
 import s from "./index.module.css"
 import { Link } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { addProductToCartAction } from "../../store/reducers/cartReducer"
 
 export default function ProductCard({ id, title, price, image, discont_price }) {
+
+  const dispatch = useDispatch();
 
   const percentDiscount = Math.round((price - discont_price) / price * 100)
 
@@ -57,7 +61,9 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
         </div>
       </div>
       </Link>
-      <button className={s.button}>Add to cart</button>
+        <div className={s.button} onClick={() => dispatch(addProductToCartAction({id, image, title, price, count: 1}))}>
+          Add to cart
+        </div>
 
     </div>
 
