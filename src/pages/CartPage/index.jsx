@@ -1,11 +1,15 @@
 import React from 'react';
 import CartContainer from '../../components/CartContainer';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 export default function CartPage() {
 
   const cartState = useSelector(store => store.cart);
+  const dispatch = useDispatch();
+
+  const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
+  const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
 
   return (
     <div>
@@ -20,7 +24,8 @@ export default function CartPage() {
           </div>
         : <CartContainer cartState={cartState}/>
       }
-
+<p>Items count: {totalCount}</p>
+<p>Total price: {totalSum}</p>
 
     </div>
   )
