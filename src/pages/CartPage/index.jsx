@@ -2,6 +2,8 @@ import React from 'react';
 import CartContainer from '../../components/CartContainer';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import {clearCartAction} from '../../store/reducers/cartReducer';
+import s from './index.module.css';
 
 export default function CartPage() {
 
@@ -13,19 +15,22 @@ export default function CartPage() {
 
   return (
     <div>
-      <h2>Shopping cart</h2>
+      <h2 className={s.name_page}>Shopping cart</h2>
       {
         cartState.length === 0
         ? <div>
-            <p>Looks like you have no items in your basket currently.</p>
-            <Link to={'/all_products'}>
-              <div>Continue Shopping</div>
+          <p>Looks like you have no items in your basket currently.</p> 
+          <Link to={'/all_products'}>
+              <div className={s.continue_button}>Continue Shopping</div>
             </Link>
           </div>
-        : <CartContainer cartState={cartState}/>
+        :<div>
+            <CartContainer cartState={cartState}/>
+            <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div>
+            <p>Items count: {totalCount}</p>
+            <p>Total price: {totalSum}</p>
+          </div>
       }
-<p>Items count: {totalCount}</p>
-<p>Total price: {totalSum}</p>
 
     </div>
   )

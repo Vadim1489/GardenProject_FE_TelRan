@@ -1,0 +1,34 @@
+.clear_button{
+    border-radius: 6px;
+    padding: 16px 56px;
+    width: 313px;
+    height: 58px;
+    background: #92a134;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;  
+}
+
+.continue_button {
+    border-radius: 6px;
+    padding: 16px 56px;
+    width: 313px;
+    height: 58px;
+    background: #92a134;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.name_page{
+    font-weight: 700;
+    font-size: 64px;
+    color: #424436;
+}
