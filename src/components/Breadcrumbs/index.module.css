@@ -2,6 +2,13 @@
     font-size: 14px;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 0;
+}
+
+.breadcrumbs_item {
+    display: inline-flex;
     align-items: center;
 }
 
@@ -24,8 +31,9 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:last-child {
+.breadcrumbs_item:last-child .button{
     color: #424436;
+    pointer-events: none;
 }
 
 .button:hover {

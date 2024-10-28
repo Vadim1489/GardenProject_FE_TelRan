@@ -1,6 +1,11 @@
-.single_product_page {
+.container {
+    padding: 20px;
     max-width: 1440px;
+    margin: 0 auto;
     background-color: #FFFFF1;
+  }
+
+.single_product {
     display: flex;
     margin: auto;
 }
