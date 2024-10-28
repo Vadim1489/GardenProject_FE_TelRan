@@ -20,8 +20,8 @@ import React, { useState } from 'react';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    message: ''
+    phone_number: '',
+    email: ''
   });
 
   const handleChange = (e) => {
@@ -56,9 +56,9 @@ const ContactForm = () => {
         <input
         placeholder='Phone number'
           type="number"
-          id="email"
-          name="email"
-          value={formData.email}
+          id="phone_number"
+          name="phone_number"
+          value={formData.phone_number}
           onChange={handleChange}
           required
         />
@@ -68,9 +68,9 @@ const ContactForm = () => {
         <input
         placeholder='Email'
           type="email"
-          id="message"
-          name="message"
-          value={formData.message}
+          id="email"
+          name="email"
+          value={formData.email}
           onChange={handleChange}
           required
         ></input>
