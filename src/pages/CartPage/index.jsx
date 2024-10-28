@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {clearCartAction} from '../../store/reducers/cartReducer';
 import s from './index.module.css';
+import FormCart from '../../components/FormCart/index'
 
 export default function CartPage() {
 
@@ -25,6 +26,7 @@ export default function CartPage() {
             </Link>
           </div>
         :<div>
+            <FormCart/>
             <CartContainer cartState={cartState}/>
             <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div>
             <p>Items count: {totalCount}</p>
