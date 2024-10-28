@@ -1,5 +1,6 @@
-// import React from "react"
+import React, { useContext, useState } from 'react';
 import s from './index.module.css';
+import { Context } from '../../context';
 
 // export default function FormCart() {
 //   return (
@@ -15,7 +16,36 @@ import s from './index.module.css';
 //   )
 // }
 
-import React, { useState } from 'react';
+//либо такой вариант формы
+
+// const cartState = useSelector(store => store.cart);
+//   const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
+
+
+// const sendOrder = e => {
+//   e.preventDefault();
+//   const {name, phone, email} = e.target;
+
+//   const order = {
+//     name: name.values,
+//     phone:phone.value,
+//     email: email.value,
+//     total: totalSum,
+//     cart: cartState
+//   }
+
+//   e.target.reser()
+// }
+{/* <form onSubmit={sendOrder}>
+        <input type='text' placeholder='Name' name='name' />
+        <input type='number' placeholder='Phone number' name='phone' />
+        <input type='text' placeholder='Email' name='email' />
+        <button>Order</button>
+    </form> */}
+
+
+
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +53,8 @@ const ContactForm = () => {
     phone_number: '',
     email: ''
   });
+
+  const {openModalWindow} = useContext(Context);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,6 +67,8 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Submitted Data:', formData);
+    
+    openModalWindow();
     //не уверена вообще в этой форме...
   };
 
