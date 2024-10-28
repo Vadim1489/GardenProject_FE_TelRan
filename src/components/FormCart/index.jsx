@@ -35,7 +35,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Submitted Data:', formData);
-    // Здесь можно добавить логику отправки формы, например, запрос к API
+    //не уверена вообще в этой форме...
   };
 
   return (
@@ -76,7 +76,7 @@ const ContactForm = () => {
         ></input>
       </div>
       
-      <button type="submit" className={s.btn}>Submit</button>
+      <button type="submit" className={s.btn}>Order</button>
     </form>
   );
 };

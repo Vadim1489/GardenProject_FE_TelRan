@@ -29,8 +29,8 @@ export default function CartPage() {
             <FormCart/>
             <CartContainer cartState={cartState}/>
             <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div>
-            <p>Items count: {totalCount}</p>
-            <p>Total price: {totalSum}</p>
+            <p className={s.total}>Items count: {totalCount}$</p>
+            <p className={s.total}>Total price: {totalSum}$</p>
           </div>
       }
 

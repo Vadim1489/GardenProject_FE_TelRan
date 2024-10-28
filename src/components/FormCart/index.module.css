@@ -28,6 +28,7 @@ input::placeholder {
 
 .form .btn {
     border-radius: 6px;
+    border: white;
     padding: 16px 56px;
     width: 313px;
     height: 58px;
@@ -37,7 +38,7 @@ input::placeholder {
     font-size: 20px;
     text-align: center;
     color: #fff;
-    cursor: pointer;  
+    cursor: pointer; 
 }
 
 .input_group {

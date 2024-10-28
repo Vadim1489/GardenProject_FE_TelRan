@@ -12,6 +12,13 @@
     cursor: pointer;  
 }
 
+.total{
+    font-weight: 700;
+    font-size: 64px;
+    color: #424436;
+
+}
+
 .continue_button {
     border-radius: 6px;
     padding: 16px 56px;
