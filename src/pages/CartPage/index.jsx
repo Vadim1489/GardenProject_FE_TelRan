@@ -4,6 +4,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {clearCartAction} from '../../store/reducers/cartReducer';
 import s from './index.module.css';
+import FormCart from '../../components/FormCart/index';
+import Breadcrumbs from '../../components/Breadcrumbs/index';
+import { useLocation } from "react-router-dom";
+
 
 export default function CartPage() {
 
