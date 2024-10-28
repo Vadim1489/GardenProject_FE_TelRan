@@ -66,7 +66,7 @@ const ContactForm = () => {
       
       <div>
         <input
-        placeholder='Name'
+        placeholder='Email'
           type="email"
           id="message"
           name="message"

@@ -1,9 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import s from './index.module.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import s from './index.module.css';
 
 
 export default function NavMenu() {
+
   return (
     <div>
       <nav className={s.nav_menu}>
