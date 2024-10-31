@@ -19,7 +19,7 @@ import {clearCartAction} from './store/reducers/cartReducer';
 function App() {
   const dispatch = useDispatch();
 
-const [modalActive, setModalActive] = useState(true);
+const [modalActive, setModalActive] = useState(false);
 const closeModalWindow = () => {
   setModalActive(false);
   dispatch(clearCartAction());
