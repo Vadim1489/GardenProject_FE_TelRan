@@ -3,9 +3,11 @@
     max-width: 1440px;
     margin: 0 auto;
     background-color: #FFFFF1;
-  }
+}
 
-.single_product {
-    display: flex;
-    margin: auto;
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #424436;
+  margin-bottom: 20px;
 }

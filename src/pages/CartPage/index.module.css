@@ -1,0 +1,51 @@
+.container {
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFF1;
+}
+
+.total{
+    font-weight: 700;
+    font-size: 64px;
+    color: #424436;
+
+}
+
+.continue_button {
+    border-radius: 6px;
+    padding: 16px 56px;
+    width: 313px;
+    height: 58px;
+    background: #92a134;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.name_page{
+    font-weight: 700;
+    font-size: 64px;
+    color: #424436;
+    margin-bottom: 40px;
+}
+
+.cart{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.details{
+    background-color: #F2F6D3;
+    border-radius: 12px;
+    padding: 32px 20px;
+    /* width: 350px;
+    height: 450px; */
+}

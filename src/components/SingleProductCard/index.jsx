@@ -1,9 +1,22 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
+import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { domen } from '../../domen';
 import s from './index.module.css'
+import { addProductToCartAction } from '../../store/reducers/cartReducer';
 
-export default function SingleProductCard({title, price, discont_price, description, image, count}) {
+export default function SingleProductCard({id ,title, price, discont_price, description, image }) {
+
+  let [ count, setCount ] = useState(1);
+
+  const incrCount = () => setCount(++count);
+
+  const decrCount = () => {
+    if(count > 1) {
+      setCount(--count)
+    }
+  };
+
+  const dispatch = useDispatch();
 
     const singleProductState = useSelector(store => store.singleProduct);
 
@@ -42,11 +55,13 @@ export default function SingleProductCard({title, price, discont_price, descript
               </div>
               <div className={s.add_cart_block}>
                   <div className={s.add_cart_count}>
-                    <div className={s.decr_count}>-</div>
-                    <div className={s.count}>{count=0}</div>
-                    <div className={s.incr_count}>+</div>
+                    <div className={s.decr_count} onClick={decrCount}>-</div>
+                    <div className={s.count}>{count}</div>
+                    <div className={s.incr_count} onClick={incrCount}>+</div>
                   </div>
-                  <div className={s.btn_add_cart}>Add to cart</div>
+                  <div className={s.btn_add_cart} onClick={() => dispatch(addProductToCartAction({ id, image, title, price, count }))}>
+                    Add to cart
+                  </div>
               </div>
               <div className={s.descr_block}>
                   <h5>Description</h5>

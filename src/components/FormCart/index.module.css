@@ -1,0 +1,54 @@
+
+.form {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    width: 516px;
+    height: 324px;
+}
+
+.form input {
+    border: 1px solid #fffff1;
+    border-radius: 6px;
+    padding: 16px 32px;
+    width: 516px;
+    height: 58px;
+    background: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+.form .btn {
+    border-radius: 6px;
+    border: white;
+    padding: 16px 56px;
+    width: 313px;
+    height: 58px;
+    background: #92a134;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer; 
+}
+
+.input_group {
+    position: relative;
+}
+
+.error_message {
+    position: absolute;
+    right: 10px;
+    top: 22px;
+    color: white;
+    font-size: 14px;
+}

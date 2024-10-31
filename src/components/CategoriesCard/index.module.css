@@ -1,31 +1,28 @@
-/* src/components/CategoriesCard/index.module.css */
-
-.categories-card {
-    width: 200px; /* Фиксированная ширина */
+.categories_card{
     height: auto;
-    border-radius: 12px; /* Закругленные углы */
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+    border-radius: 12px;
+    padding-bottom: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.categories-card img {
+.categories_card img {
     width: 100%;
-    height: 150px; /* Фиксированная высота для изображений */
+    height: 350px;
     object-fit: cover;
-    border-bottom: 1px solid #ddd;
+    border-radius: 12px;
+    vertical-align: top;
 }
 
-.categories-card h5 {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+.categories_card h5 {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #424436;
 }
 
-.categories-card:hover {
-    transform: translateY(-5px); /* Подъем карточки */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличение тени */
+.categories_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
