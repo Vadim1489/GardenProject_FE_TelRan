@@ -2,24 +2,8 @@ import React, { useContext, useState } from 'react';
 import s from './index.module.css';
 import { Context } from '../../context';
 
-// export default function FormCart() {
-//   return (
-//     <div className={s.form}>
-//         <form>
-//             <label htmlFor="Name"></label>
-//             <input type="text" placeholder="Name" />
-//             <label htmlFor="Name"></label>
-//             <input type="number" placeholder="Phone Number" />
-//             <input type="text" placeholder="Email" />
-//         </form>
-//     </div>
-//   )
-// }
-
-//либо такой вариант формы
-
 // const cartState = useSelector(store => store.cart);
-//   const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
+// const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
 
 
 // const sendOrder = e => {
@@ -69,7 +53,6 @@ const ContactForm = () => {
     console.log('Submitted Data:', formData);
     
     openModalWindow();
-    //не уверена вообще в этой форме...
   };
 
   return (

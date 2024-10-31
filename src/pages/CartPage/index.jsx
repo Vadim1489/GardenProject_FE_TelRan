@@ -34,12 +34,17 @@ export default function CartPage() {
               <div className={s.continue_button}>Continue Shopping</div>
             </Link>
           </div>
-        :<div>
-            <FormCart/>
-            <CartContainer cartState={cartState}/>
-            <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div>
+        :<div className={s.cart}>
+            <div>
+              <CartContainer cartState={cartState}/>
+            {/* <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div> */}
+            </div>
+            <div className={s.details}>
             <p className={s.total}>Items count: {totalCount}</p>
             <p className={s.total}>Total price: {totalSum}$</p>
+              <FormCart/>
+            </div>
+
           </div>
       }
 
