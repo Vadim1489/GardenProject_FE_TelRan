@@ -63,7 +63,7 @@
     outline: none;
 }
 
-input::placeholder {
+.form input::placeholder {
     color: white;
 }
 
