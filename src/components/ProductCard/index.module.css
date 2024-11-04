@@ -11,6 +11,7 @@
     height: 422px;
     position: relative;
     background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
@@ -107,6 +108,12 @@ a {
     text-align: center;
     color: white;
 }
+
+.product_card:hover{
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
 
 .product_card:hover .button {
     opacity: 1;
