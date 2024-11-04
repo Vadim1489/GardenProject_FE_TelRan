@@ -3,7 +3,7 @@ import FilterForm from '../FilterForm';
 import ProductCard from '../ProductCard'; 
 import s from './index.module.css';
 
-export default function FilteredProducts({products}) {
+export default function FilteredProducts({products, onlyDiscount}) {
 
   const [filteredProducts, setFilteredProducts] = useState(products);
 
@@ -16,7 +16,7 @@ export default function FilteredProducts({products}) {
     if (filters.maxPrice) {
       newFilteredProducts = newFilteredProducts.filter(product => product.price <= filters.maxPrice);
     }
-    if (filters.discounted) {
+    if (filters.isDiscount) {
       newFilteredProducts = newFilteredProducts.filter(product => product.discont_price);
     }
 
@@ -37,7 +37,7 @@ export default function FilteredProducts({products}) {
 
   return (
     <>
-      <FilterForm setCheck={handleFilter} none={false} /> 
+      <FilterForm onlyDiscount={onlyDiscount} setCheck={handleFilter} /> 
       {
         filteredProducts.length > 0 ? (
           <div className={s.products}>

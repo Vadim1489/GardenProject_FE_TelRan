@@ -29,7 +29,7 @@ export default function CartItem({id, title, price, image, count, discont_price}
               {
                 percentDiscount !== 100
                 ? (<div className={s.price_block}>
-                    <p className={s.discont_price}>${20}</p>
+                    <p className={s.discont_price}>${discont_price}</p>
                     <p className={s.price}>${price}</p>
                     </div>)
                 : (<p className={s.price_without_discont}>${price}</p>)

@@ -39,14 +39,19 @@ export default function Form() {
           
           <div className={`${s.input_group} ${errors.phone ? s.has_error : ''}`}>
             <input
-              {...register('phone', {
-                required: 'Phone number is required',
-                pattern: { value: /^\d+$/, message: 'Please enter a valid phone number' },
-              })}
-              placeholder='Phone'
+                {...register('phone', {
+                    required: 'Phone number is required',
+                    pattern: {
+                        value: /^(?:\+|0)[1-9]\d{0,13}$/,
+                        message: 'Please enter a valid phone number'
+                    },
+                    maxLength: 15 
+                })}
+                placeholder='Phone'
+                maxLength={15} 
             />
             {errors.phone && <span className={s.error_message}>! {errors.phone.message}</span>}
-          </div>
+        </div>
 
           
           <div className={`${s.input_group} ${errors.email ? s.has_error : ''}`}>
@@ -54,8 +59,8 @@ export default function Form() {
               {...register('email', {
                 required: 'Email is required',
                 pattern: {
-                  value: /\S+@\S+\.\S+/,
-                  message: 'Please enter a valid email address',
+                    value: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                    message: 'Please enter a valid email address'
                 },
               })}
               placeholder='Email'
