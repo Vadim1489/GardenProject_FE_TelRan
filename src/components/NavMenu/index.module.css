@@ -24,7 +24,6 @@
 }
 
 @media (max-width: 480px) {
-
     .nav_menu {
         display: none;
         flex-direction: column;
@@ -35,7 +34,7 @@
         z-index: 200;
         width: 75vw;
         height: 100vh;
-        align-items: flex-start;
+        align-items: flex-start;  
         justify-content: flex-start; 
         padding-top: 80px; 
         padding-left: 20px;
@@ -58,9 +57,8 @@
         color: #424436;
     }
 
-   
     .nav_menu > a {
         margin-bottom: 15px;
-        text-align: left; 
+        text-align: left;  
     }
 }
