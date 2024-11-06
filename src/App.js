@@ -20,17 +20,23 @@ function App() {
   const dispatch = useDispatch();
 
 const [modalActive, setModalActive] = useState(false);
+const [menuActive, setMenuActive] = useState(false);
+
 const closeModalWindow = () => {
   setModalActive(false);
   dispatch(clearCartAction());
 };
 const openModalWindow = () => setModalActive(true);
 
+const openMenu = () => setMenuActive(true);
+const closeMenu = () => setMenuActive(false);
+
+
 
 
   return (
-    <div className='main_container'>
-      <Context.Provider value={{closeModalWindow, openModalWindow, modalActive }}>
+    <div>
+      <Context.Provider value={{closeModalWindow, openModalWindow, modalActive, openMenu, closeMenu, menuActive}}>
         <OrderPopup/>
         <Header /> 
         <Routes>
