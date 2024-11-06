@@ -5,3 +5,33 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Основной контейнер */
+.main_container{
+  margin: 0px auto;
+  max-width: 1440px;
+}
+/* Адаптивные медиазапросы */
+@media (max-width: 1439px) {
+  .main_container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 999px) {
+  .main_container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_container {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 479px) {
+  .main_container {
+    max-width: 360px;
+  }
+}
+

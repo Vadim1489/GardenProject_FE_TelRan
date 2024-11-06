@@ -29,7 +29,7 @@ const openModalWindow = () => setModalActive(true);
 
 
   return (
-    <div>
+    <div className='main_container'>
       <Context.Provider value={{closeModalWindow, openModalWindow, modalActive }}>
         <OrderPopup/>
         <Header /> 

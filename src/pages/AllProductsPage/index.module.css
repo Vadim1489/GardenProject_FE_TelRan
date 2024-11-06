@@ -12,3 +12,20 @@
     margin: auto;
 }
 
+/* удалить потом. шаблон */
+@media (max-width: 1439px) {
+    
+  }
+  
+@media (max-width: 999px) {
+   
+  }
+  
+@media (max-width: 767px) {
+   
+  }
+
+@media (max-width: 479px) {
+   
+  }
+
