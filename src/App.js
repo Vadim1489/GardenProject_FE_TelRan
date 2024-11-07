@@ -35,7 +35,7 @@ const closeMenu = () => setMenuActive(false);
 
 
   return (
-    <div>
+    <div className='main_container'>
       <Context.Provider value={{closeModalWindow, openModalWindow, modalActive, openMenu, closeMenu, menuActive}}>
         <OrderPopup/>
         <Header /> 
