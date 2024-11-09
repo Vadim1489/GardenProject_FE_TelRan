@@ -1,5 +1,5 @@
 
-.form {
+.form_container {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,17 @@
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 16px;
+}
+
+.form input:hover {
+    border-color: #92A134; 
+    box-shadow: 0px 4px 8px rgba(146, 161, 52, 0.3); 
+}
+
+.form input:focus {
+    border-color: #92A134;
+    box-shadow: 0px 0px 8px rgba(146, 161, 52, 0.5); 
+    outline: none;
 }
 
 input::placeholder {
@@ -49,6 +60,6 @@ input::placeholder {
     position: absolute;
     right: 10px;
     top: 22px;
-    color: white;
+    color: rgb(105, 1, 1);
     font-size: 14px;
 }
