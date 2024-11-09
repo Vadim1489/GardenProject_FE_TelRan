@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import NavMenu from '../NavMenu';
 import { Link } from 'react-router-dom';
 import s from './index.module.css';
 import logo from './media/logo.png';
 import Cart from './media/cart.png';
 import { useSelector } from 'react-redux';
+import { IoMdMenu } from "react-icons/io";
+import { Context } from '../../context';
 
 
 
@@ -14,6 +16,8 @@ export default function Header() {
   const cartState = useSelector(store => store.cart);
 
   const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
+
+  const { openMenu } = useContext(Context);
 
   return (
     <header className={s.header}>
@@ -26,6 +30,7 @@ export default function Header() {
             : <span>{ totalCount }</span>
           }
         </Link>
+        <IoMdMenu onClick={openMenu} />
     </header>
   )
 }

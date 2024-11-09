@@ -20,31 +20,39 @@ function App() {
   const dispatch = useDispatch();
 
 const [modalActive, setModalActive] = useState(false);
+const [menuActive, setMenuActive] = useState(false);
+
 const closeModalWindow = () => {
   setModalActive(false);
   dispatch(clearCartAction());
 };
 const openModalWindow = () => setModalActive(true);
 
+const openMenu = () => setMenuActive(true);
+const closeMenu = () => setMenuActive(false);
+
+
 
 
   return (
-    <div>
-      <Context.Provider value={{closeModalWindow, openModalWindow, modalActive }}>
-        <OrderPopup/>
-        <Header /> 
-        <Routes>
-          <Route path='/' element={<MainPage />} />
-          <Route path='/categories' element={<CategoriesPage />} />
-          <Route path='/all_products' element={<AllProductsPage />} />
-          <Route path='/cart' element={<CartPage />} />
-          <Route path='/categories/:category_id' element={<ProductsByCategoryPage />} />
-          <Route path='/products/:product_id' element={<SingleProductPage />} /> 
-          <Route path='/all_sales' element={<AllSalesPage />} /> 
-          <Route path='*' element={<NotFoundPage />} /> 
-        </Routes>
-        <Footer /> 
-      </Context.Provider>
+    <div className='app_wrapper'>
+      <div className='main_container'>
+        <Context.Provider value={{closeModalWindow, openModalWindow, modalActive, openMenu, closeMenu, menuActive}}>
+          <OrderPopup/>
+          <Header /> 
+          <Routes>
+            <Route path='/' element={<MainPage />} />
+            <Route path='/categories' element={<CategoriesPage />} />
+            <Route path='/all_products' element={<AllProductsPage />} />
+            <Route path='/cart' element={<CartPage />} />
+            <Route path='/categories/:category_id' element={<ProductsByCategoryPage />} />
+            <Route path='/products/:product_id' element={<SingleProductPage />} /> 
+            <Route path='/all_sales' element={<AllSalesPage />} /> 
+            <Route path='*' element={<NotFoundPage />} /> 
+          </Routes>
+          <Footer /> 
+        </Context.Provider>
+      </div>
     </div>
   );
 }
