@@ -98,8 +98,8 @@
     position: absolute;
     right: 10px;
     top: 22px;
-    color: white;
-    font-size: 14px;
+    color: rgb(105, 1, 1);
+    font-size: 18px;
 }
 
 @media (max-width: 1439px) {
