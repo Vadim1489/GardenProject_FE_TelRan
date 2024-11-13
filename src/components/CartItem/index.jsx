@@ -15,12 +15,10 @@ export default function CartItem({id, title, price, image, count, discont_price}
       <div>
         <img src={`${domen}${image}`} alt={title}/>
       </div>
-      <div className={s.test}>
-          {/* здесь нужно изменить имя класса */}
+      <div className={s.info}>
         <p className={s.title}>{title}</p>
         <RxCross2 onClick={() =>dispatch(deleteProductFromCartAction(id))}/>
-          <div className={s.test1}>  
-            {/* здесь нужно изменить имя класса */}
+          <div className={s.block_price_and_count}>  
             <div className={s.add_cart_count}>
               <div className={s.decr_count} onClick={() => dispatch(decrementCountAction(id))}>-</div>
               <div className={s.count}> { count } </div>
