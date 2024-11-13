@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import CartContainer from '../../components/CartContainer';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import {clearCartAction} from '../../store/reducers/cartReducer';
 import s from './index.module.css';
 import FormCart from '../../components/FormCart/index';
 import Breadcrumbs from '../../components/Breadcrumbs/index';

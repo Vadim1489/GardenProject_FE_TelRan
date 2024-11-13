@@ -16,6 +16,7 @@ export default function CartItem({id, title, price, image, count, discont_price}
         <img src={`${domen}${image}`} alt={title}/>
       </div>
       <div className={s.test}>
+          {/* здесь нужно изменить имя класса */}
         <p className={s.title}>{title}</p>
         <RxCross2 onClick={() =>dispatch(deleteProductFromCartAction(id))}/>
           <div className={s.test1}>  
