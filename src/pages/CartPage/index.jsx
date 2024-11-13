@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import CartContainer from '../../components/CartContainer';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {clearCartAction} from '../../store/reducers/cartReducer';
 import s from './index.module.css';
@@ -13,7 +13,7 @@ export default function CartPage() {
 
   const location = useLocation()
   const cartState = useSelector(store => store.cart);
-  const dispatch = useDispatch();
+
 
   const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
   const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
@@ -37,7 +37,7 @@ export default function CartPage() {
         :<div className={s.cart}>
             <div>
               <CartContainer cartState={cartState}/>
-            {/* <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div> */}
+
             </div>
             <div className={s.details}>
             <p className={s.total}>Items count: {totalCount}</p>
