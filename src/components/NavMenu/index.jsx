@@ -8,14 +8,12 @@ export default function NavMenu() {
   const { closeMenu, menuActive } = useContext(Context);
 
   return (
-    <div>
-      <nav className={[s.nav_menu, menuActive ? s.active : '' ].join(' ')}>
-        <Link to='/' onClick={closeMenu}>Main Page</Link>
-        <Link to='/categories' onClick={closeMenu}>Categories</Link>
-        <Link to='/all_products' onClick={closeMenu}>All products</Link>
-        <Link to='/all_sales' onClick={closeMenu}>All sales</Link>
-        <IoMdClose onClick={closeMenu} />
-      </nav>
-    </div>
+    <nav className={[s.nav_menu, menuActive ? s.active : ''].join(' ')}>
+      <Link to='/' onClick={closeMenu}>Main Page</Link>
+      <Link to='/categories' onClick={closeMenu}>Categories</Link>
+      <Link to='/all_products' onClick={closeMenu}>All products</Link>
+      <Link to='/all_sales' onClick={closeMenu}>All sales</Link>
+      <IoMdClose onClick={closeMenu} />
+    </nav>
   );
 }

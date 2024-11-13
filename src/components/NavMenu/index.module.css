@@ -53,6 +53,7 @@
     .nav_menu.active {
         display: flex;
         transform: translateX(0);
+        
     }
 
     .nav_menu>svg {
