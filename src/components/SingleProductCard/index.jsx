@@ -66,6 +66,7 @@ export default function SingleProductCard({id ,title, price, discont_price, desc
               <div className={s.descr_block}>
                   <h5>Description</h5>
                   <p>{description}</p>
+                  <p className={s.read_more}>Read more</p>
               </div>
             </div>
               

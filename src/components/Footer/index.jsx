@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './index.module.css';
-import logo_inst from './media/instagram.png';
-import logo_whats from './media/watsapp.png';
+import React from "react"
+import styles from "./index.module.css"
+import logo_inst from "./media/instagram.png"
+import logo_whats from "./media/watsapp.png"
 
 const Footer = () => {
   return (
@@ -9,35 +9,45 @@ const Footer = () => {
       <h2 className={styles.title}>Contact</h2>
 
       <div className={styles.infoContainer}>
-        <div className={styles.leftBlock}>
-          <div className={styles.block}>
-            <h3>Phone</h3>
-            <a href="tel:+499999999999" className={styles.phoneLink}>
-              +49 999 999 99 99
-            </a> 
-          </div>
-          <div className={styles.block}>
-            <h3>Address</h3>
-            <a href="https://maps.app.goo.gl/k7ZoUZgPuTXEMvH69" target="_blank">Linkstraße 2, 8 OG, 10785, Berlin, Deutschland</a>
+        <div className={styles.block}>
+          <h3>Phone</h3>
+          <a href="tel:+499999999999">+49 999 999 99 99</a>
+        </div>
+
+        <div className={styles.block}>
+          <h3>Socials</h3>
+          <div className={styles.icons}>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo_inst} alt="Instagram" />
+            </a>
+            <a
+              href="https://whatsapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo_whats} alt="WhatsApp" />
+            </a>
           </div>
         </div>
 
-        <div className={styles.rightBlock}>
-          <div className={styles.block}>
-            <h3>Socials</h3>
-            <div className={styles.icons}>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src={logo_inst} alt="Instagram" />
-              </a>
-              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                <img src={logo_whats} alt="WhatsApp" />
-              </a>
-            </div>
-          </div>
-          <div className={styles.block}>
-            <h3>Working Hours</h3>
-            <p>24 hours a day</p>
-          </div>
+        <div className={styles.block}>
+          <h3>Address</h3>
+          <a
+            href="https://maps.app.goo.gl/k7ZoUZgPuTXEMvH69"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkstraße 2, 8 OG, 10785, Berlin, Deutschland
+          </a>
+        </div>
+
+        <div className={styles.block}>
+          <h3>Working Hours</h3>
+          <p>24 hours a day</p>
         </div>
       </div>
 
@@ -53,7 +63,7 @@ const Footer = () => {
         />
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
