@@ -23,6 +23,7 @@ export default function Header() {
     <header className={s.header}>
         <Link to='/' className={s.logo}> <img src={logo} alt="Logo" /></Link>
         <NavMenu />
+        <div className={s.cart_menu}>
         <Link to='/cart' className={s.cart}><img src={Cart} alt="Cart" />
         {
             cartState.length === 0
@@ -31,6 +32,7 @@ export default function Header() {
           }
         </Link>
         <IoMdMenu onClick={openMenu} />
+        </div>
     </header>
   )
 }
