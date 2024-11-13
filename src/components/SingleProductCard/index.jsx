@@ -39,10 +39,10 @@ export default function SingleProductCard({id ,title, price, discont_price, desc
                 {
                   percentDiscount !== 100
                   ? (<div className={s.price_block}>
-                      <p className={s.discont_price}>${discont_price}</p>
+                      <p className={s.discont_price}>${(discont_price * count).toFixed(2)}</p>
                       <p className={s.price}>${price}</p>
                     </div>)
-                  : (<p className={s.price_without_discont}>${price}</p>)
+                  : (<p className={s.price_without_discont}>${(price * count).toFixed(2)}</p>)
                 }
                 <div className={s.discont_percent_block}>
                   {
@@ -66,6 +66,7 @@ export default function SingleProductCard({id ,title, price, discont_price, desc
               <div className={s.descr_block}>
                   <h5>Description</h5>
                   <p>{description}</p>
+                  <p className={s.read_more}>Read more</p>
               </div>
             </div>
               

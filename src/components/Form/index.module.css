@@ -2,10 +2,9 @@
     border-radius: 12px;
     padding: 32px 32px 0px 32px;
     width: 1360px;
-    height: 514px;
+    height: 486px;
     background: linear-gradient(37deg, #87933d 0%, #55610b 100%);
     margin: auto;
-    margin-top: 80px;
 }
 
 .discount_form p {
@@ -20,22 +19,23 @@
 .discount_form_container {
     display: flex;
     gap: 32px;
+    width: 1296px;
+    height: 360px;
 }
 
 .discount_form img {
     width: 748px;
-    height: 388px;
-    /* object-fit: cover; */
+    height: 360px;
 }
 
 .form {
-    margin-top: 32px;
+    margin: 32px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 516px;
-    height: 324px;
+    height: 296px;
 }
 
 .form input {
@@ -47,11 +47,25 @@
     background: linear-gradient(37deg, #87933d 0%, #55610b 100%);
     font-size: 20px;
     font-weight: 500;
+    line-height: 130%;
+    color: #fff;
     cursor: pointer;
     margin-bottom: 16px;
+    transition: all 0.3s ease;
 }
 
-input::placeholder {
+.form input:hover {
+    border-color: #92A134;
+    box-shadow: 0px 4px 8px rgba(146, 161, 52, 0.3);
+}
+
+.form input:focus {
+    border-color: #92A134;
+    box-shadow: 0px 0px 8px rgba(146, 161, 52, 0.5);
+    outline: none;
+}
+
+.form input::placeholder {
     color: white;
 }
 
@@ -62,11 +76,18 @@ input::placeholder {
     width: 516px;
     height: 58px;
     background: #ffffff;
-
+    color: #55610b;
     font-weight: 600;
     font-size: 20px;
+    line-height: 130%;
     cursor: pointer;
-    margin: 44px 0 32px 0;
+    margin: 16px 0 32px 0;
+    transition: all 0.3s ease;
+}
+
+.form .btn:hover {
+    background-color: #e5e4d3;
+    color: #87933d;
 }
 
 .input_group {
@@ -77,10 +98,209 @@ input::placeholder {
     position: absolute;
     right: 10px;
     top: 22px;
-    color: white;
-    font-size: 14px;
+    color: rgb(105, 1, 1);
+    font-size: 18px;
 }
 
-.btn:hover {
-    background-color: #e5e4d3;
+@media (max-width: 1439px) {
+    .discount_form {
+        padding: 32px 0 0 0;
+        width: 960px;
+        height: 434px;
+    }
+
+    .discount_form_container {
+        gap: 20px;
+        width: 960px;
+        height: 308px;
+    }
+
+    .imgBlock {
+        position: relative;
+        width: 602px;
+        height: 308px;
+        overflow: hidden;
+        /* Скрывает части изображения, выходящие за пределы контейнера */
+        z-index: 5;
+    }
+
+    .discount_form img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Масштабирует изображение, сохраняя пропорции */
+        object-position: right;
+    }
+
+    .form {
+        margin: 0 20px 32px 0;
+        width: 450px;
+        height: 276px;
+    }
+
+    .form input {
+        /* border-radius: 6px; */
+        padding: 16px 20px;
+        width: 450px;
+        height: 58px;
+        /* font-size: 20px; */
+        margin-bottom: 12px;
+    }
+
+    .form .btn {
+        /* border-radius: 6px; */
+        padding: 16px 20px;
+        width: 450px;
+        height: 58px;
+        /* font-size: 20px; */
+        margin: 8px 0 32px 0;
+    }
+}
+
+
+@media (max-width: 999px) {
+    .discount_form {
+        padding: 32px 20px 0 0;
+        width: 728px;
+        height: 488px;
+    }
+
+    .discount_form p {
+        font-size: 56px;
+        padding: 0 20px;
+    }
+
+    .discount_form_container {
+        width: 688px;
+        height: 308px;
+    }
+
+    .form {
+        /* margin: 24px 0 32px 0; */
+        margin: 0 0 32px 0;
+        width: 334px;
+        height: 276px;
+    }
+
+    .form input {
+        /* border-radius: 6px; */
+        /* padding: 16px 20px; */
+        width: 334px;
+        height: 58px;
+        /* font-size: 20px; */
+        /* margin-bottom: 12px; */
+    }
+
+    .form .btn {
+        /* border-radius: 6px; */
+        /* padding: 16px 20px; */
+        width: 334px;
+        height: 58px;
+        /* font-size: 20px; */
+        /* margin: 8px 0 32px 0; */
+    }
+}
+
+@media (max-width: 767px) {
+    .discount_form {
+        padding: 24px 20px 0px 20px;
+        width: 440px;
+        height: 592px;
+    }
+
+    .discount_form p {
+        font-size: 48px;
+        padding: 0;
+    }
+
+    .discount_form_container {
+        flex-direction: column;
+        width: 400px;
+        height: 438px;
+        margin: 0;
+    }
+
+    .imgBlock {
+        width: 418px;
+        height: 214px;
+    }
+
+    .discount_form_container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .form {
+        margin: 24px 0 0 0;
+        width: 400px;
+        height: 224px;
+    }
+
+    .form input {
+        /* border-radius: 6px; */
+        padding: 12px 20px;
+        width: 400px;
+        height: 47px;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .form .btn {
+        /* border-radius: 6px; */
+        padding: 12px 20px;
+        width: 400px;
+        height: 47px;
+        font-size: 18px;
+        margin: 12px 0 0 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .discount_form {
+        width: 320px;
+        height: 592px;
+    }
+
+    .discount_form p {
+        font-size: 40px;
+    }
+
+    .discount_form_container {
+        width: 280px;
+        height: 456px;
+    }
+
+    .imgBlock {
+        width: 280px; /* Ширина контейнера для изображения */
+        height: 232px; /* Высота контейнера для изображения */
+        overflow: hidden; /* Обрезает изображение по ширине контейнера */
+        position: relative;
+    }
+
+    .discount_form img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Заполняет контейнер */
+        object-position: left; /* Сдвигает изображение влево для обрезки справа */
+    }
+
+    .form {
+        width: 280px;
+        height: 224px;
+    }
+
+    .form input {
+
+        width: 280px;
+        height: 47px;
+
+    }
+    .form .btn {
+        /* border-radius: 6px; */
+        /* padding: 12px 20px; */
+        width: 280px;
+        height: 47px;
+        /* font-size: 20px; */
+        /* margin: 12px 0 0 0; */
+    }
+   
 }

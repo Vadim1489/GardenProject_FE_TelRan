@@ -1,100 +1,77 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import s from './index.module.css';
 import { Context } from '../../context';
-
-// const cartState = useSelector(store => store.cart);
-// const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
-
-
-// const sendOrder = e => {
-//   e.preventDefault();
-//   const {name, phone, email} = e.target;
-
-//   const order = {
-//     name: name.values,
-//     phone:phone.value,
-//     email: email.value,
-//     total: totalSum,
-//     cart: cartState
-//   }
-
-//   e.target.reser()
-// }
-{/* <form onSubmit={sendOrder}>
-        <input type='text' placeholder='Name' name='name' />
-        <input type='number' placeholder='Phone number' name='phone' />
-        <input type='text' placeholder='Email' name='email' />
-        <button>Order</button>
-    </form> */}
-
-
-
+import { useForm } from 'react-hook-form';
+import { useSelector } from 'react-redux';
+import { sendCart } from '../../requests/cart_req';
 
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone_number: '',
-    email: ''
-  });
 
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  
   const {openModalWindow} = useContext(Context);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  const cartState = useSelector(store=>store.cart);
+  const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Submitted Data:', formData);
-    
+  const sendOrder = (data) => {
+    sendCart({
+      ...data,
+      total: totalSum,
+      cart: cartState
+    });
+
     openModalWindow();
-  };
+    
+    reset();
+  }
+
+  
+
+  const nameRegister = register('name', {
+    required: 'Name is required',
+  });
+  const phoneRegister = register('phone', {
+    required: 'Phone number is required',
+    pattern: {
+      value: /^(?:\+|0)[1-9]\d{0,13}$/,
+      message: 'Please enter a valid phone number',
+      maxLength: 15 
+    }
+  });
+  const emailRegister = register('email', {
+    required: 'Email is required',
+    pattern: {
+      value: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
+      message: 'Please enter a valid email address'
+    }
+  });
 
   return (
-    <form onSubmit={handleSubmit} className={s.form}>
-      <div>
-        <input
-        placeholder='Name'
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      
-      <div>
-        <input
-        placeholder='Phone number'
-          type="number"
-          id="phone_number"
-          name="phone_number"
-          value={formData.phone_number}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      
-      <div>
-        <input
-        placeholder='Email'
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        ></input>
-      </div>
-      
-      <button type="submit" className={s.btn}>Order</button>
-    </form>
+    <div className={s.form_container}>
+      <form onSubmit={handleSubmit(sendOrder)} className={s.form}>
+        <div className={s.input}>
+          <div className={`${s.input_group} ${errors.name ? s.has_error : ''}`}>
+            <input placeholder='Name' {...nameRegister} />
+            {errors.name && <span className={s.error_message}>! {errors.name.message}</span>}
+          </div>
+          
+          <div className={`${s.input_group} ${errors.name ? s.has_error : ''}`}>
+            <input placeholder='Phone number' {...phoneRegister} />
+            {errors.phone && <span className={s.error_message}>! {errors.phone.message}</span>}
+
+          </div>
+          
+          <div className={`${s.input_group} ${errors.name ? s.has_error : ''}`}>
+            <input placeholder='Email' {...emailRegister} />
+            {errors.email && <span className={s.error_message}>! {errors.email.message}</span>}
+
+          </div>
+        </div>
+        <button type="submit" className={s.btn}>Order</button>
+      </form>
+    </div>
   );
 };
 

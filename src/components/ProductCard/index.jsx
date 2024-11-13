@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addProductToCartAction } from "../../store/reducers/cartReducer"
 
-export default function ProductCard({ id, title, price, image, discont_price }) {
+export default function ProductCard({ id, title, price, image, discont_price, count }) {
 
   const dispatch = useDispatch();
 
@@ -61,7 +61,7 @@ export default function ProductCard({ id, title, price, image, discont_price }) 
         </div>
       </div>
       </Link>
-        <div className={s.button} onClick={() => dispatch(addProductToCartAction({id, image, title, price, count: 1}))}>
+        <div className={s.button} onClick={() => dispatch(addProductToCartAction({id, image, title, price, discont_price, count: 1}))}>
           Add to cart
         </div>
 

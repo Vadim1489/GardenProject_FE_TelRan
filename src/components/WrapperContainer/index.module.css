@@ -1,5 +1,33 @@
-.wrapper_container { 
+.wrapper_container {
     background-image: url('./media/wrapper_background.png');
     width: 1440px;
     height: 600px;
+}
+
+@media (max-width: 1439px) {
+    .wrapper_container {
+        width: 1000px;
+        height: 476px;
+    }
+}
+
+@media (max-width: 999px) {
+    .wrapper_container {
+        width: 768px;
+        height: 634px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper_container {
+        width: 480px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 479px) {
+    .wrapper_container {
+        width: 360px;
+        height: 600px;
+    }
 }

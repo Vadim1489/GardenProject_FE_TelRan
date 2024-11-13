@@ -1,16 +1,20 @@
 .link {
     text-decoration: none;
-    width: 316px;
-    height: 422px;
+    /* width: 316px;
+    height: 422px; */
 }
 
 .product_card {
+    height: auto;
+    overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 12px;
     width: 316px;
     height: 422px;
     position: relative;
     background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
 
 }
 
@@ -20,6 +24,7 @@
     border-top-right-radius: 12px;
     width: 316px;
     height: 284px;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -44,21 +49,26 @@
 .product_text {
     margin-top: 20px;
     padding: 0 32px;
-    width: 316px;
+    /* width: 316px; */
+    display: block;
+    /* Убедитесь, что элемент блочный */
+
 }
 
 .product_title {
     font-weight: 500;
     font-size: 20px;
-    /* line-height: 130%; */
     color: #424436;
     white-space: nowrap;
-    /*  Запрещает перенос текста на новую строку */
+    /* Запрещает перенос текста на новую строку */
     overflow: hidden;
-    /*  Скрывает текст, который не помещается в блок */
-    text-overflow: ellipsis;
-    /*  Добавляет троеточие в конце строки */
-    width: 250;
+    /* Скрывает текст, который не помещается в блок */
+    text-overflow: ellipsis !important;
+    /* Добавляет троеточие в конце строки . не знаю, почему не работает!*/
+    width: 100%;
+    /* Устанавливаем ширину в 100% от родителя */
+    display: block;
+    /* убедимся, что элемент блочный */
 }
 
 .product_price {
@@ -108,6 +118,12 @@ a {
     color: white;
 }
 
+.product_card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+
 .product_card:hover .button {
     opacity: 1;
     /* Кнопка становится видимой */
@@ -122,5 +138,102 @@ a {
     /* Кнопка становится видимой */
     visibility: visible;
     background-color: #424436 !important
-    /* При наведении на кнопку */
+        /* При наведении на кнопку */
+}
+
+@media (max-width: 1439px) {
+    .product_card {
+        width: 225px;
+        height: 398px;
+    }
+
+    .product_img {
+        width: 225px;
+        height: 250px;
+    }
+
+    .product_text {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .product_price {
+        margin-top: 12px;
+        gap: 12px;
+    }
+
+    .button {
+        bottom: 164px;
+        width: 193px;
+        height: 58px;
+    }
+}
+
+@media (max-width: 999px) {
+    .product_card {
+        width: 354px;
+        height: 372px;
+    }
+
+    .product_img {
+        width: 354px;
+        height: 250px;
+    }
+
+    .button {
+        bottom: 138px;
+        width: 322px;
+        height: 58px;
+    }
+}
+
+@media (max-width: 767px) {
+    .product_card {
+        width: 210px;
+        height: 358px;
+    }
+
+    .product_img {
+        width: 210px;
+        height: 220px;
+    }
+
+    .precent_discount {
+        width: 62px;
+        height: 31px;
+        font-size: 18px;
+    }
+
+    .discont_price {
+        font-size: 36px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .button {
+        bottom: 154px;
+        width: 178px;
+        height: 58px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 479px) {
+    .product_card {
+        width: 320px;
+        height: 335px;
+    }
+
+    .product_img {
+        width: 320px;
+        height: 220px;
+    }
+
+    .button {
+        bottom: 131px;
+        width: 288px;
+        height: 58px;
+    }
 }

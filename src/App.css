@@ -5,3 +5,44 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.app_wrapper {
+  background-color: #f0f0f0; /* Цвет фона */
+  min-height: 100vh; /* Занимает всю высоту экрана */
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+
+/* Основной контейнер */
+.main_container{
+  max-width: 1440px; /* Максимальная ширина контейнера */
+  width: 100%;
+}
+
+
+
+/* Адаптивные медиазапросы */
+@media (max-width: 1439px) {
+  .main_container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 999px) {
+  .main_container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_container {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 479px) {
+  .main_container {
+    max-width: 360px;
+  }
+}
+
