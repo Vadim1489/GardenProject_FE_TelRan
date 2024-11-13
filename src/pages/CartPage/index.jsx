@@ -16,7 +16,10 @@ export default function CartPage() {
   const dispatch = useDispatch();
 
   const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
-  const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
+  const totalSum = +cartState.reduce((acc, el) => {
+    const finalPrice = el.discont_price ? el.discont_price : el.price;
+    return acc + (finalPrice * el.count);
+  }, 0).toFixed(2);
 
   useEffect(() => {
     localStorage.setItem('cart' , JSON.stringify(cartState))
@@ -40,8 +43,12 @@ export default function CartPage() {
             {/* <div className={s.clear_button} onClick={() => dispatch(clearCartAction())}>Clear Cart</div> */}
             </div>
             <div className={s.details}>
-            <p className={s.total}>Items count: {totalCount}</p>
-            <p className={s.total}>Total price: {totalSum}$</p>
+            <p className={s.order_details}>Order details</p>
+            <p className={s.total}>{totalCount} items</p>
+            <div className={s.price_container}>
+              <p className={s.total}>Total  </p>
+              <p className={s.total_sum}>${totalSum}</p>
+            </div>
               <FormCart/>
             </div>
 
