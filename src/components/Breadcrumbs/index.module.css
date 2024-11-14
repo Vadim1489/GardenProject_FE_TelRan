@@ -1,10 +1,10 @@
 .breadcrumbs {
-    font-size: 14px;
-    margin-bottom: 20px;
+    margin: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px 0;
+    background-color: #FFFFF1;
+
 }
 
 .breadcrumbs_item {
@@ -13,30 +13,49 @@
 }
 
 .line {
-    display: inline-block; 
-    width: 50px; 
-    height: 2px; 
-    background-color: lightgrey; 
-    margin: 0 10px; 
+    display: inline-block;
+    width: 16px;
+    height: 1px;
+    background-color: #ddd;
 }
 
 .button {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 6px 12px;
-    border: 2px solid lightgray; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 126%;
+    padding: 8px 16px;
+    border: 2px solid #ddd;
     border-radius: 6px;
-    color: lightgray;
+    color: #ddd;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.breadcrumbs_item:last-child .button{
+.breadcrumbs_item:last-child .button {
     color: #424436;
     pointer-events: none;
 }
 
 .button:hover {
-    background-color: gray; 
+    background-color: gray;
     color: #fff;
+}
+@media (max-width: 1439px) {
+    
+}
+
+@media (max-width: 999px) {
+    .button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .breadcrumbs {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+ 
 }
