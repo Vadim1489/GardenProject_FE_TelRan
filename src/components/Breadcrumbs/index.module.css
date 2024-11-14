@@ -1,9 +1,10 @@
 .breadcrumbs {
-    margin: 40px;
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: #FFFFF1;
+    max-width: 100%;
 
 }
 
@@ -40,13 +41,15 @@
     background-color: gray;
     color: #fff;
 }
-@media (max-width: 1439px) {
-    
-}
+
 
 @media (max-width: 999px) {
     .button {
         font-size: 12px;
+    }
+
+    .breadcrumbs {
+        padding: 32px 0;
     }
 }
 
@@ -54,8 +57,4 @@
     .breadcrumbs {
         display: none;
     }
-}
-
-@media (max-width: 479px) {
- 
 }
