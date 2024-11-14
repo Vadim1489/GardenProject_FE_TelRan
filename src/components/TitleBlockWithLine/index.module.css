@@ -1,3 +1,7 @@
+h2 {
+    font-size: 100%;
+}
+
 .title_block {
     display: flex;
     align-items: center;
