@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, } from 'react';
 import s from './index.module.css'
 import { useLocation, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -22,7 +22,7 @@ export default function ProductsByCategoryPage() {
     useEffect(() => {
       dispatch(changeProductByCategoryStatusAction())
       dispatch(getProductsByCategory(category_id))
-    }, [])
+    }, [dispatch, category_id])
 
   return (
     <div className={s.container}>
