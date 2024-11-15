@@ -3,6 +3,22 @@
 font-size: 16px;
 line-height: 130%;
 color: #424436;
-width: 548px;
+max-width: var(--max-width);
+
+/* width: 548px; */
 /* height: 227px; */
+
 }
+
+  
+  @media (max-width: 768px) {
+    .description {
+      --max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description {
+      --max-width: 150px;
+    }
+  }

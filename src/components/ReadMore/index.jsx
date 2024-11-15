@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import s from './index.module.css'
 
-export default function ReadMore({ description, maxLines  = 5 }) {
+export default function ReadMore({ description, maxLines  = 5, maxWidth=300 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleReadMore = () => {
@@ -15,16 +15,16 @@ export default function ReadMore({ description, maxLines  = 5 }) {
           overflow: "hidden",
           textOverflow: "ellipsis",
           display: "-webkit-box",
-          WebkitLineClamp: isExpanded ? "unset" : maxLines , // показываем ограничение на количество строк
+          WebkitLineClamp: isExpanded ? "unset" : maxLines , 
           WebkitBoxOrient: "vertical",
         }}
         className={s.description}
       >
         {description}
       </p>
-      <button onClick={toggleReadMore}>
+      <div onClick={toggleReadMore}>
         {isExpanded ? "Read Less" : "Read More"}
-      </button>
+      </div>
       
     </div>
   );
