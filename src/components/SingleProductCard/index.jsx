@@ -67,7 +67,7 @@ export default function SingleProductCard({id ,title, price, discont_price, desc
               <div className={s.descr_block}>
                   <h5>Description</h5>
                  
-                  <ReadMore description={description} maxLength={306} maxWidth="300px"/>
+                  <ReadMore description={description} maxLength={306}/>
               </div>
             </div>
               
