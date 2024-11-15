@@ -60,7 +60,7 @@ export default function SingleProductCard({id ,title, price, discont_price, desc
                     <div className={s.count}>{count}</div>
                     <div className={s.incr_count} onClick={incrCount}>+</div>
                   </div>
-                  <div className={s.btn_add_cart} onClick={() => dispatch(addProductToCartAction({ id, image, title, price, count }))}>
+                  <div className={s.btn_add_cart} onClick={() => dispatch(addProductToCartAction({ id, image, title, price, discont_price, count }))}>
                     Add to cart
                   </div>
               </div>
