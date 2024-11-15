@@ -7,7 +7,7 @@
 
 /* CSS Reset от Эрика Мейера */
 /* https://meyerweb.com/eric/tools/css/reset/ */
-html,
+/* html,
 body,
 div,
 span,
@@ -91,13 +91,13 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 100%; */
   /* font: inherit; */
-  vertical-align: baseline;
-}
+  /* vertical-align: baseline;
+} */
 
 /* HTML5 display-role reset for older browsers */
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -136,7 +136,7 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+} */
 
 
 .app_wrapper {
