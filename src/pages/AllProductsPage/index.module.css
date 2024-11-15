@@ -1,16 +1,45 @@
 .all_products {
-    max-width: 1440px;
-    margin: auto;
+    /* max-width: 1440px; */
+    /* margin: auto; */
     background-color: #FFFFF1;
-    padding: 0 40px;
+    padding: 0 40px 80px 40px;
+    max-width: 100%;
 }
 
 .all_products h3 {
     font-weight: 700;
     font-size: 64px;
     color: #424436;
-    margin: auto;
+    line-height: 110%;
+    /* margin: auto; */
 }
+
+@media (max-width: 1439px) {
+    .all_products {
+      padding: 0 20px 60px 20px;
+    }
+    }
+  @media (max-width: 999px) {
+    .all_products h3{
+      font-size: 56px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .all_products {
+      padding: 0 20px 56px 20px;
+    }
+    .all_products h3{
+      font-size: 48px;
+    }
+  }
+  @media (max-width: 479px) {
+    .all_products h3{
+      font-size: 40px;
+    }
+  }
+
+
 
 /* удалить потом. шаблон */
 @media (max-width: 1439px) {
