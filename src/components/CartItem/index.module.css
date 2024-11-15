@@ -89,13 +89,13 @@
 
 .discont_price {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 110%;
     color: #424436;
 }
 .price {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 130%;
     text-decoration: line-through;
     color: #8b8b8b;
@@ -103,7 +103,7 @@
 
 .price_without_discont {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 110%;
     color: #424436;
 }
