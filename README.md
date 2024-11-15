@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Project Name
+### Garden Products
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Project
+### Links:
+- [Project Mockup](https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=280-1136&node-type=canvas&t=FyrlGIjH4ae3m55u-0)
+- [Technical Specification (TS)](https://docs.google.com/document/d/1RU3XZ0tYzUHOfF7ijKEsZjT7f086xNL8-OiYQt-cKFk/edit?tab=t.0)
+- [Deployed Version](https://gardenproject-fe-telran.onrender.com/)
 
-## Available Scripts
+### General Description
+The application is an online store that allows users to browse a product catalog, add products to a shopping cart, place orders.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Features
+- Filtering and sorting of products
+- Product catalog browsing 
+- Adding products to the shopping cart and placing orders
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technology Stack
+- **HTML5/CSS**: Page layout and styling
+- **JavaScript (ES6+)**: Main language for client-side logic
+- **React**: Building the user interface and managing components
+- **Redux**: State management
+- **React Router**: Route to pages based on URL
+- **Git and GitHub**: Version control and repository hosting
+- **VS Code**: Primary code editor
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Authors
+### Vadim Kiseolar
+- **Contact**:
+  [LinkedIn Profile](https://www.linkedin.com/in/vadim-kiseolar-67b4aa300/)
+- **Email**: 
+  kiseolar1998@gmail.com
+- **Contribution to the Project**:
+  - Development of the client-side interface (layout, React component functionality)
+      1. Setting up the entire application.
+      2. All products.
+      3. Detailed product description
+      4. Page not found
+      5. Project documentation
+      6. Project deployment
+  - State management using Redux
+  - Integration and configuration of API requests
+  - Functional testing and application performance optimization
+  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Jane Plyasovskikh
+- **Contact**: 
+  [LinkedIn Profile](https://www.linkedin.com/in/yanaplyasovskikh-27b835244/)
+- **Email**: 
+plyasovskikhyana1@gmail.com
+- **Contribution to the Project**:
+  - Development of the client-side interface (layout, React component functionality)
+      1. Application header (Header with NavMenu).
+      2. Product categories and display on the main page.
+      3. Cart
+      4. Organizing work with jira.
+      5. Final presentation
+  - Functional testing and application performance optimization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Anastasia Paliy
+- **Email**: 
+anastasiapaliy97@gmail.com
+- **Contribution to the Project**:
+  - Development of the client-side interface (layout, React component functionality)
+      1. Footer
+      2. Burger menu
+      3. Breadcrumbs
+      4. Sorting and filtering
+      5. Products by category
+  - Functional testing and application performance optimization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Odrina Helen
+- **Email**: 
+odrinahelen@gmail.com
+- **Contribution to the Project**:
+  - Development of the client-side interface (layout, React component functionality)
+      1. Displaying 4 random discounted products.
+      2. Products with a discount.
+      3. Mobile adaptability
+      4. Final revision styles.
+  - Functional testing and application performance optimization
