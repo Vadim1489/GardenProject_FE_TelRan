@@ -8,6 +8,8 @@
     display: flex;
     align-items: end;
     gap: 135px;
+    justify-content: space-between;
+    /* width: 484px; */
 }
 
 .order_details {
@@ -15,6 +17,7 @@
     font-size: 40px;
     line-height: 1.1;
     color: #424436;
+    margin-bottom: 24px;
 }
 
 .total {
@@ -44,7 +47,6 @@
     text-align: center;
     color: #fff;
     cursor: pointer;
-    margin-top: 40px;
 }
 
 .name_page {
@@ -59,15 +61,15 @@
     align-items: start;
     justify-content: space-between;
     gap: 32px;
-
 }
 
 .details {
     background-color: #F2F6D3;
     border-radius: 12px;
     padding: 32px;
-    /* width: 350px;
-    height: 450px; */
+    width: 548px;
+    height: 582px;
+    
 }
 
 @media (max-width: 1439px) {
@@ -85,6 +87,16 @@
 
     .details {
         padding: 32px 20px;
+        width: 470px;
+        height: 538px;
+    }
+
+    .order_details {
+        margin-bottom: 12px;
+    }
+
+    .details {
+        padding: 32px 20px;
     }
 }
 
@@ -95,6 +107,12 @@
 
     .price_container {
         gap: 390px;
+    }
+
+    .details {
+        padding: 32px 20px;
+        width: 728px;
+        height: 511px;
     }
 
     .order_details {
@@ -116,6 +134,23 @@
 
     .cart {
         flex-direction: column;
+    }
+
+    .order_details {
+        font-size: 32px;
+    }
+
+    .total {
+        font-size: 32px;
+    }
+
+    .total_sum {
+        font-size: 56px;
+    }
+
+    .name_page {
+        font-size: 56px;
+        margin-bottom: 32px;
     }
 }
 
@@ -142,7 +177,6 @@
         width: 285px;
         height: 47px;
         font-size: 18px;
-
     }
 
     .name_page {
@@ -152,7 +186,36 @@
 
     .details {
         padding: 24px 20px;
+        width: 440px;
+        height: 424px;
     }
+
+    .order_details {
+        font-size: 28px;
+    }
+
+    .total {
+        font-size: 28px;
+    }
+
+    .total_sum {
+        font-size: 48px;
+    }
+
+    .continue_button {
+        margin-top: 24px;
+        padding: 12px 52px;
+        width: 285px;
+        height: 47px;
+        font-size: 18px;
+    }
+
+    .name_page {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+
 }
 
 @media (max-width: 479px) {
@@ -166,5 +229,19 @@
 
     .name_page {
         font-size: 40px;
+    }
+
+    .total_sum {
+        font-size: 40px;
+    }
+
+    .name_page {
+        font-size: 40px;
+    }
+
+    .details {
+        padding: 24px 20px;
+        width: 320px;
+        height: 415px;
     }
 }
