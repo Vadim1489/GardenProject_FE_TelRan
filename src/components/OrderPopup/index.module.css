@@ -1,6 +1,6 @@
-.modal{
-  background-color: rgba(40,40,40, 0.4);
-  position: fixed; 
+.modal {
+  background-color: rgba(40, 40, 40, 0.4);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,19 +11,81 @@
   align-items: center;
 }
 
-.modal > div{
-  background-color: rgba(146, 161,52,1);
+.modal>div {
+  background-color: rgba(146, 161, 52, 1);
   color: white;
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 12px;
+  padding: 32px;
   position: relative;
-  width: 550;
-
+  width: 548px;
+  height: 236px;
 }
 
-.modal > div svg{
+.modal>div svg {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 32px;
+  right: 32px;
   cursor: pointer;
+}
+
+.modal>div h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  color: #fffff1;
+  margin-bottom: 4px;
+}
+
+.modal>div p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110%;
+  color: #fffff1;
+  margin-top: 20px;
+}
+
+@media (max-width: 1439px) {}
+
+@media (max-width: 999px) {}
+
+@media (max-width: 767px) {
+  .modal>div {
+    padding: 24px 20px;
+    width: 440px;
+    height: 200px;
+  }
+
+  .modal>div svg {
+    top: 24px;
+    right: 24px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .modal>div h2 {
+    font-size: 36px;
+    margin-bottom: 2px;
+  }
+
+  .modal>div p {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 479px) {
+  .modal>div {
+    padding: 76px 20px 76px 20px;
+    width: 320px;
+    height: 315px;
+  }
+  .modal>div h2 {
+    font-size: 28px;
+    margin-bottom: 2px;
+  }
+
+  .modal>div p {
+    font-size: 18px;
+    margin-top: 18px;
+  }
 }

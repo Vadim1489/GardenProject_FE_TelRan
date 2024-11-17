@@ -1,6 +1,5 @@
 .sales_block {
-    max-width: 1440px;
-    margin: auto;
+    max-width: 100%;
     background-color: #FFFFF1;
     padding: 0 40px;
 }
@@ -10,11 +9,53 @@
     font-size: 64px;
     color: #424436;
 }
-.cards_block{
+
+.cards_block {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+@media (max-width: 1439px) {
+    .sales_block {
+        padding: 0 20px;
     }
-    .link{
-        text-decoration: none;
+
+    .cards_block {
+        gap: 20px;
     }
+}
+
+@media (max-width: 999px) {
+    .cards_block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sales_block h3 {
+        font-size: 57px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sales_block {
+        padding: 0 20px;
+    }
+
+    .sales_block h3 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 479px) {
+    .cards_block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sales_block h3 {
+        font-size: 40px;
+    }
+}

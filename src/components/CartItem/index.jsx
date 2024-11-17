@@ -12,12 +12,14 @@ export default function CartItem({id, title, price, image, count, discont_price}
 
   return (
     <div className={s.card}>
-      <div>
+      <div className={s.image}>
         <img src={`${domen}${image}`} alt={title}/>
       </div>
       <div className={s.info}>
+        <div className={s.title_container}>
         <p className={s.title}>{title}</p>
         <RxCross2 onClick={() =>dispatch(deleteProductFromCartAction(id))}/>
+        </div>
           <div className={s.block_price_and_count}>  
             <div className={s.add_cart_count}>
               <div className={s.decr_count} onClick={() => dispatch(decrementCountAction(id))}>-</div>
@@ -28,10 +30,10 @@ export default function CartItem({id, title, price, image, count, discont_price}
               {
                 percentDiscount !== 100
                 ? (<div className={s.price_block}>
-                    <p className={s.discont_price}>${discont_price * count}</p>
+                    <p className={s.discont_price}>${(discont_price * count).toFixed(2)}</p>
                     <p className={s.price}>${price}</p>
                     </div>)
-                : (<p className={s.price_without_discont}>${price * count}</p>)
+                : (<p className={s.price_without_discont}>${(price * count).toFixed(2)}</p>)
               }
             </div>
           </div>

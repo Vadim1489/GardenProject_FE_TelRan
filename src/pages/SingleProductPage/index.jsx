@@ -20,15 +20,15 @@ export default function SingleProductPage() {
   const categoryId = singleProductState?.data[0].categoryId;
   const categoryTitle = singleCategoryState?.data?.title;
 
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(getSingleProduct(product_id));
-  },[dispatch]);
+  }, [dispatch, product_id]);
 
   useEffect(() => {
     if(singleProductState) {
       dispatch(getCategoryById(categoryId));
     }
-  }, [singleProductState, dispatch])
+  }, [categoryId, singleProductState, dispatch])
   
 
   return (
