@@ -208,8 +208,6 @@
 
     .single_product_content {
         gap: 32px;
-        /* width: 470px;
-        height: 574px; */
     }
 
     .price_block {
@@ -249,9 +247,6 @@
         position: relative;
     }
 
-    /* .single_product_image {
-          position: relative;
-    } */
 
     .single_product_content {
         gap: 20px;
