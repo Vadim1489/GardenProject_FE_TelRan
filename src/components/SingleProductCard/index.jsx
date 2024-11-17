@@ -33,14 +33,28 @@ export default function SingleProductCard({
     <div>
       {singleProductState.status === "loading"
         ? <p>Product info is loading...</p>
-        : <div className={s.single_product_block}>
+        : <> 
+        <h3 className={s.title_2}>
+                {title}
+        </h3>
+        <div className={s.single_product_block}>
             <div>
               <div className={s.single_product_image}>
                 <img src={`${domen}${image}`} alt={title} />
+                <div className={s.discont_percent_block_2}>
+                  {discont_price !== null
+                    ? <p className={s.discont_percent}>
+                        -{Math.round(100 - discont_price * 100 / price)} %
+                      </p>
+                    : null}
+                </div>
               </div>
+
+             
             </div>
+
             <div className={s.single_product_content}>
-              <h3>
+              <h3 className={s.title}>
                 {title}
               </h3>
               <div className={s.price_container}>
@@ -99,7 +113,14 @@ export default function SingleProductCard({
                 <ReadMore description={description} />
               </div>
             </div>
-          </div>}
+          </div>
+            <div className={s.descr_block_2}>
+            <h5>Description</h5>
+
+            <ReadMore description={description} />
+          </div>
+          </>
+          }
     </div>
   )
 }

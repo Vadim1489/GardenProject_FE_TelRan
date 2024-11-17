@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import s from './index.module.css'
 
-export default function ReadMore({ description, maxLines = 5, maxWidth = 400 }) {
+export default function ReadMore({ description, maxLines = 5, maxWidth = 728 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const textRef = useRef(null);
