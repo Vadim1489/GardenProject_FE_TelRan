@@ -15,7 +15,6 @@ export default function AllSalesPage() {
 
   useEffect(() => dispatch(getAllProducts), [dispatch])
 
-  // Получаем продукты со скидкой
 
   const discountedProducts = allProductsState.filter(
     product => product.discont_price

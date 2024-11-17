@@ -13,14 +13,12 @@ export default function SalesBlock() {
 
   useEffect(() => dispatch(getAllProducts), [dispatch]);
 
-  // Получаем продукты со скидкой и перемешиваем их
 
   const discountedProducts = allProductsState.filter(
     (product) => product.discont_price
   );
   const shuffledProducts = discountedProducts?.sort(() => Math.random() - 0.5);
 
-  // Получение первых четырех случайных продуктов
   const productsToDisplay = shuffledProducts.slice(0, 4);
 
   return (

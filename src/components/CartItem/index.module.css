@@ -12,11 +12,8 @@
     border: 1px solid #ddd;
     border-radius: 12px 0 0 12px;
     width: 200px;
-    /* height: 180px; */
     overflow: hidden;
-    /* Скрывает части изображения, выходящие за пределы контейнера */
     position: relative;
-    /* Для абсолютного позиционирования img внутри */
 }
 
 .image img {
@@ -26,11 +23,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Заполняет контейнер, сохраняя пропорции */
     object-position: center;
-    /* Центрирует изображение */
     border-radius: 11px 0 0 11px;
-    /* Немного меньше, чем у контейнера, чтобы избежать проблем с границей */
 }
 
 .card svg {
@@ -87,11 +81,8 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    /* Скрывает текст, который не помещается в блок */
     text-overflow: ellipsis !important;
-    /* Добавляет троеточие в конце строки . не знаю, почему не работает!*/
     width: 100%;
-    /* Устанавливаем ширину в 100% от родителя */
 }
 
 
@@ -139,13 +130,11 @@
 @media (max-width: 1439px) {
     .card {
         width: 470px;
-        /* height: 192px; */
         gap: 20px;
     }
 
     .image {
         width: 200px;
-        /* height: 192px; */
     }
 
     .card svg {
@@ -187,12 +176,10 @@
 @media (max-width: 999px) {
     .card {
         width: 728px;
-        /* height: 136px; */
     }
 
     .image {
         width: 229px;
-        /* height: 136px; */
     }
 
     .card svg {
@@ -231,12 +218,10 @@
 @media (max-width: 767px) {
     .card {
         width: 440px;
-        /* height: 175px; */
     }
 
     .image {
         width: 210px;
-        /* height: 175px; */
     }
 
     .add_cart_count {
@@ -292,12 +277,10 @@
 @media (max-width: 479px) {
     .card {
         width: 320px;
-        /* height: 175px; */
     }
 
     .image {
         width: 116px;
-        /* height: 175px; */
     }
 
     .add_cart_count {

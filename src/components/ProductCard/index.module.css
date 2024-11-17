@@ -1,7 +1,5 @@
 .link {
     text-decoration: none;
-    /* width: 316px;
-    height: 422px; */
 }
 
 .product_card {
@@ -49,9 +47,7 @@
 .product_text {
     margin-top: 20px;
     padding: 0 32px;
-    /* width: 316px; */
     display: block;
-    /* Убедитесь, что элемент блочный */
 
 }
 
@@ -60,15 +56,10 @@
     font-size: 20px;
     color: #424436;
     white-space: nowrap;
-    /* Запрещает перенос текста на новую строку */
     overflow: hidden;
-    /* Скрывает текст, который не помещается в блок */
     text-overflow: ellipsis !important;
-    /* Добавляет троеточие в конце строки . не знаю, почему не работает!*/
     width: 100%;
-    /* Устанавливаем ширину в 100% от родителя */
     display: block;
-    /* убедимся, что элемент блочный */
 }
 
 .product_price {
@@ -101,7 +92,6 @@ a {
 
 .button {
     opacity: 0;
-    /* Кнопка скрыта */
     visibility: hidden;
     position: absolute;
     bottom: 154px;
@@ -126,7 +116,6 @@ a {
 
 .product_card:hover .button {
     opacity: 1;
-    /* Кнопка становится видимой */
     visibility: visible;
     background-color: #f26d22;
     border: none;
@@ -135,10 +124,8 @@ a {
 
 .button:hover {
     opacity: 1;
-    /* Кнопка становится видимой */
     visibility: visible;
     background-color: #424436 !important
-        /* При наведении на кнопку */
 }
 
 @media (max-width: 1439px) {
