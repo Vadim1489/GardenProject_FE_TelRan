@@ -4,7 +4,7 @@
 ## About the Project
 ### Links:
 - [Project Mockup](https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=280-1136&node-type=canvas&t=FyrlGIjH4ae3m55u-0)
-- [Technical Specification (TS)](https://docs.google.com/document/d/1RU3XZ0tYzUHOfF7ijKEsZjT7f086xNL8-OiYQt-cKFk/edit?tab=t.0)
+- [Technical Specification (TS)](https://docs.google.com/document/d/1h0WavIZILAQPLp9QR1f0ozSVgcByZR2eiwHLp3JBbeA/edit?usp=drive_link)
 - [Deployed Version](https://gardenproject-fe-telran.onrender.com/)
 
 ### General Description
